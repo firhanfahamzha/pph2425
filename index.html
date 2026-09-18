@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="warm">
+<head>
+  <!-- ═══════════════════════════════════════════════════════════
+       META
+       ═══════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light">
+
+  <title>TaxQuest — PPh Pasal 24 &amp; 25 | Pembelajaran Interaktif Akuntansi &amp; Perpajakan</title>
+
+  <meta name="description"
+        content="Modul pembelajaran interaktif PPh Pasal 24 (Kredit Pajak Luar Negeri) dan PPh Pasal 25 (Angsuran Pajak Penghasilan). Dilengkapi kuis, simulator, drag-and-drop, dan studi kasus.">
+  <meta name="author" content="TaxQuest">
+  <meta name="keywords"
+        content="PPh Pasal 24, PPh Pasal 25, kredit pajak luar negeri, angsuran pajak, akuntansi, perpajakan, UU PPh">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="TaxQuest — PPh Pasal 24 &amp; 25">
+  <meta property="og:description" content="Modul pembelajaran interaktif PPh Pasal 24 &amp; 25 dengan kuis, simulator, dan studi kasus.">
+  <meta property="og:locale"      content="id_ID">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FAVICON — Inline SVG (tidak perlu file eksternal)
+       ═══════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Cpath d='M16 6v20M9 12h14M12 16l-3 7h6zM20 16l-3 7h6z' stroke='%23f59e0b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FONT PRECONNECT (font di-import dari styles.css)
+       ═══════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       STYLESHEET UTAMA
+       ═══════════════════════════════════════════════════════════ -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CRITICAL INLINE STYLES — Loader
+       Ditaruh inline agar tampil segera sebelum styles.css selesai
+       ═══════════════════════════════════════════════════════════ -->
+  <style>
+    /* Reset minimal untuk loader (self-contained) */
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
+
+    #tq-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background: #faf8f3;
+      font-family: system-ui, -apple-system, sans-serif;
+      transition: opacity 400ms ease, visibility 400ms ease;
+    }
+
+    #tq-loader.tq-loader-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .tq-loader-mark {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 800;
+      box-shadow: 0 12px 32px rgba(79, 70, 229, 0.3);
+      animation: tq-pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes tq-pulse {
+      0%, 100% { transform: scale(1);    box-shadow: 0 12px 32px rgba(79, 70, 229, 0.3); }
+      50%      { transform: scale(1.06); box-shadow: 0 16px 42px rgba(79, 70, 229, 0.45); }
+    }
+
+    .tq-loader-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1c1917;
+      letter-spacing: -0.01em;
+    }
+
+    .tq-loader-sub {
+      font-size: 12px;
+      color: #78716c;
+      margin-top: -14px;
+    }
+
+    .tq-loader-dots {
+      display: flex;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .tq-loader-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d6d3d1;
+      animation: tq-bounce 1.2s infinite ease-in-out;
+    }
+
+    .tq-loader-dot:nth-child(1) { animation-delay: 0s;   background: #4f46e5; }
+    .tq-loader-dot:nth-child(2) { animation-delay: .15s; background: #7c3aed; }
+    .tq-loader-dot:nth-child(3) { animation-delay: .3s;  background: #d97706; }
+
+    @keyframes tq-bounce {
+      0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+      40%           { transform: scale(1.2); opacity: 1;   }
+    }
+
+    /* Noscript fallback */
+    .tq-noscript {
+      max-width: 620px;
+      margin: 80px auto;
+      padding: 40px 32px;
+      background: #fff;
+      border: 2px solid #fca5a5;
+      border-left: 6px solid #dc2626;
+      border-radius: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(0,0,0,.08);
+    }
+
+    .tq-noscript h1 {
+      font-size: 22px;
+      color: #dc2626;
+      margin: 0 0 12px;
+    }
+
+    .tq-noscript p {
+      color: #44403c;
+      line-height: 1.6;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LOADING STATE
+       Otomatis disembunyikan setelah app.js selesai boot.
+       ═══════════════════════════════════════════════════════════ -->
+  <div id="tq-loader" role="status" aria-live="polite" aria-label="Memuat aplikasi">
+    <div class="tq-loader-mark" aria-hidden="true">⚖</div>
+    <div class="tq-loader-text">TaxQuest</div>
+    <div class="tq-loader-sub">PPh Pasal 24 &amp; 25</div>
+    <div class="tq-loader-dots" aria-hidden="true">
+      <span class="tq-loader-dot"></span>
+      <span class="tq-loader-dot"></span>
+      <span class="tq-loader-dot"></span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NOSCRIPT FALLBACK
+       Ditampilkan jika JavaScript dinonaktifkan di browser.
+       ═══════════════════════════════════════════════════════════ -->
+  <noscript>
+    <div class="tq-noscript">
+      <h1>⚠️ JavaScript Diperlukan</h1>
+      <p>
+        <strong>TaxQuest</strong> adalah modul pembelajaran interaktif yang memerlukan JavaScript
+        untuk berjalan.
+      </p>
+      <p>
+        Silakan aktifkan JavaScript di pengaturan browser Anda, kemudian muat ulang halaman ini.
+      </p>
+      <p style="margin-top: 20px; font-size: 12px; color: #a8a29e;">
+        Materi lengkap juga tersedia dalam format PDF cetak — silakan hubungi pengajar Anda.
+      </p>
+    </div>
+  </noscript>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       APPLICATION SCRIPTS
+       Urutan penting: content → components → app
+       Semua pakai `defer` agar:
+         • Tidak memblokir parsing HTML
+         • Tetap dieksekusi berurutan sesuai urutan deklarasi
+         • Dijalankan setelah DOM selesai diparsing (sebelum DOMContentLoaded)
+       ═══════════════════════════════════════════════════════════ -->
+  <script src="content.js"    defer></script>
+  <script src="components.js" defer></script>
+  <script src="app.js"        defer></script>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       LOADER DISMISSAL SCRIPT
+       Menyembunyikan loader setelah window.load, atau setelah
+       timeout fallback jika ada resource yang lambat.
+       ═══════════════════════════════════════════════════════════ -->
+  <script>
+    (function () {
+      'use strict';
+
+      var loader = document.getElementById('tq-loader');
+      if (!loader) return;
+
+      var dismissed = false;
+
+      function dismissLoader(reason) {
+        if (dismissed) return;
+        dismissed = true;
+        loader.classList.add('tq-loader-hidden');
+        loader.setAttribute('aria-hidden', 'true');
+
+        // Fully remove after transition to free layout
+        setTimeout(function () {
+          if (loader && loader.parentNode) {
+            loader.parentNode.removeChild(loader);
+          }
+        }, 500);
+
+        if (window.console && console.log) {
+          console.log('[TaxQuest] Loader dismissed ·', reason);
+        }
+      }
+
+      // Primary dismissal: after all resources (scripts, fonts) are loaded
+      // Small delay so loader doesn't flash on instant loads
+      window.addEventListener('load', function () {
+        setTimeout(function () { dismissLoader('window.load'); }, 250);
+      });
+
+      // Fallback: force dismiss after 4 seconds no matter what
+      // (protects against hanging external resources like Google Fonts)
+      setTimeout(function () {
+        dismissLoader('timeout-fallback');
+      }, 4000);
+
+      // Emergency: if app.js boot signals via event, dismiss immediately
+      document.addEventListener('taxquest:booted', function () {
+        dismissLoader('app-boot-signal');
+      });
+    })();
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       BOOT SIGNAL BRIDGE
+       Menghubungkan App.booted → custom event → loader dismiss
+       (Tidak mengubah app.js; bridge di sini untuk decoupling)
+       ═══════════════════════════════════════════════════════════ -->
+  <script>
+    (function () {
+      'use strict';
+      var attempts = 0;
+      var maxAttempts = 60; // ~3 detik (60 × 50ms)
+      var timer = setInterval(function () {
+        attempts++;
+        if (window.TQ && window.TQ.App && window.TQ.App.booted) {
+          clearInterval(timer);
+          document.dispatchEvent(new CustomEvent('taxquest:booted'));
+        } else if (attempts >= maxAttempts) {
+          clearInterval(timer);
+        }
+      }, 50);
+    })();
+  </script>
+
+</body>
+</html>

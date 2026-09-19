@@ -1,7 +1,7 @@
 /* ============================================================
    TAXQUEST — PPh Pasal 24 & 25
    CONTENT — Single Source of Truth
-   Semua materi dari File 1 (PPh 24) & File 2 (PPh 25)
+   Revisi: Selaras dengan PDF Resmi Cipta Sarana Cendekia
    ============================================================ */
 
 window.TaxQuestContent = {
@@ -13,19 +13,19 @@ window.TaxQuestContent = {
     brand: '⚖️ TaxQuest',
     title: 'PPh Pasal 24 & Pasal 25',
     subtitle: 'Kredit Pajak Luar Negeri & Angsuran Pajak Penghasilan',
-    version: '1.0',
+    version: '2.0',
     totalXP: 300
   },
 
   /* ------------------------------------------------------------
-     LEVELS (untuk XP system)
+     LEVELS
      ------------------------------------------------------------ */
   levels: [
-    { min: 0,   name: '🌱 Pemula',            icon: '🌱' },
-    { min: 30,  name: '📘 Pelajar Pajak',     icon: '📘' },
-    { min: 80,  name: '📗 Mahir Kredit',      icon: '📗' },
-    { min: 150, name: '🏅 Ahli PPh 24/25',    icon: '🏅' },
-    { min: 250, name: '👑 Master TaxQuest',   icon: '👑' }
+    { min: 0,   name: '🌱 Pemula',           icon: '🌱' },
+    { min: 30,  name: '📘 Pelajar Pajak',    icon: '📘' },
+    { min: 80,  name: '📗 Mahir Kredit',     icon: '📗' },
+    { min: 150, name: '🏅 Ahli PPh 24/25',   icon: '🏅' },
+    { min: 250, name: '👑 Master TaxQuest',  icon: '👑' }
   ],
 
   /* ------------------------------------------------------------
@@ -74,19 +74,19 @@ window.TaxQuestContent = {
           variant: '',
           icon: '🎯',
           title: 'Mengapa Ada PPh 24 dan PPh 25?',
-          html: '<p>Ada dua masalah fundamental dalam sistem PPh Indonesia yang memerlukan dua solusi berbeda:</p>',
+          html: '<p>Dua masalah fundamental dalam sistem PPh Indonesia yang memerlukan dua solusi berbeda:</p>',
           extra: [
             {
               type: 'reveal',
               icon: '❌',
               title: 'Masalah 1: Double Taxation',
-              body: '<p>Penghasilan dari luar negeri sudah dipajaki di negara sumber, namun karena Indonesia menganut prinsip <em>worldwide income</em>, penghasilan yang sama berpotensi dipajaki lagi di Indonesia.</p><p><strong>Solusinya: PPh Pasal 24.</strong> Pajak yang dibayar atau terutang di luar negeri dapat dikreditkan terhadap PPh terutang di Indonesia, sehingga tidak terjadi pemajakan berganda.</p>'
+              body: '<p>Wajib Pajak dalam negeri terutang pajak atas Penghasilan Kena Pajak yang berasal dari <strong>seluruh penghasilan</strong>, termasuk penghasilan yang diterima atau diperoleh dari luar negeri. Tanpa mekanisme pengkreditan, penghasilan yang sama akan dipajaki dua kali — di negara sumber dan di Indonesia.</p><p><strong>Solusinya: PPh Pasal 24</strong> — PPh Luar Negeri yang terutang, dibayar, atau dipotong di luar negeri dapat dikreditkan terhadap PPh yang terutang di Indonesia.</p>'
             },
             {
               type: 'reveal',
               icon: '❌',
               title: 'Masalah 2: Beban Pajak Akhir Tahun',
-              body: '<p>Tanpa mekanisme angsuran, Wajib Pajak akan menghadapi beban pajak besar sekaligus pada akhir tahun pajak. Hal ini menyulitkan arus kas dan perencanaan keuangan.</p><p><strong>Solusinya: PPh Pasal 25.</strong> Pajak dibayar secara bertahap setiap bulan selama tahun pajak berjalan, sebagai angsuran yang akan menjadi kredit pajak di SPT Tahunan.</p>'
+              body: '<p>Tanpa mekanisme angsuran, Wajib Pajak akan menghadapi beban pajak besar sekaligus pada akhir tahun pajak, menyulitkan arus kas dan perencanaan keuangan.</p><p><strong>Solusinya: PPh Pasal 25</strong> — Pajak dibayar secara bertahap setiap bulan selama tahun pajak berjalan, sebagai <strong>angsuran Pajak Penghasilan dalam Tahun Pajak berjalan untuk suatu bulan yang harus dibayar sendiri oleh Wajib Pajak</strong>.</p>'
             }
           ]
         },
@@ -96,25 +96,7 @@ window.TaxQuestContent = {
           variant: 'ok',
           icon: '💡',
           title: 'Prinsip Kunci',
-          html: 'PPh 24 bersifat <strong>pengurang</strong> (kredit pajak dari luar negeri), sedangkan PPh 25 bersifat <strong>pembayaran bertahap</strong> (angsuran bulanan). Keduanya mengurangi PPh terutang di SPT Tahunan.'
-        },
-
-        {
-          type: 'card',
-          variant: 'card-dark',
-          icon: '🗺️',
-          title: 'Roadmap Pembelajaran',
-          html: `
-            <p style="color:rgba(255,255,255,.85);margin-bottom:16px;">Enam misi terstruktur untuk menguasai PPh 24 &amp; 25 secara menyeluruh:</p>
-            <div class="grid grid-2" style="gap:10px;">
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 1</strong> · Pembuka</div>
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 2</strong> · PPh 24</div>
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 3</strong> · PPh 25</div>
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 4</strong> · Perbandingan</div>
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 5</strong> · Studi Kasus</div>
-              <div style="padding:10px 14px;background:rgba(255,255,255,.08);border-radius:8px;font-size:13px;"><strong style="color:#f59e0b;">Misi 6</strong> · Kuis Final</div>
-            </div>
-          `
+          html: 'PPh 24 = <strong>KREDIT</strong> pajak dari luar negeri (di akhir tahun). PPh 25 = <strong>ANGSURAN</strong> pajak bulanan (sepanjang tahun). Keduanya mengurangi PPh terutang di SPT Tahunan.'
         }
       ]
     },
@@ -128,7 +110,7 @@ window.TaxQuestContent = {
       head: {
         kicker: 'Misi 2 · PPh Pasal 24',
         title: 'Kredit Pajak Luar Negeri',
-        desc: 'Mekanisme pengkreditan pajak yang dibayar atau terutang di luar negeri untuk menghindari pemajakan berganda atas penghasilan dari luar negeri.'
+        desc: 'Mekanisme pengkreditan PPh Luar Negeri terhadap PPh terutang di Indonesia untuk menghindari pemajakan berganda atas penghasilan dari luar negeri.'
       },
       blocks: [
 
@@ -140,56 +122,131 @@ window.TaxQuestContent = {
           title: 'Definisi &amp; Dasar Hukum',
           html: `
             <div class="callout p24" style="margin-top:0;">
-              <div class="callout-title">📖 DEFINISI PPh PASAL 24</div>
-              "Pajak yang dibayar atau terutang di luar negeri atas penghasilan yang diterima atau diperoleh dari luar negeri yang boleh dikreditkan terhadap PPh yang terutang atas seluruh penghasilan Wajib Pajak dalam negeri."
+              <div class="callout-title">📖 DEFINISI</div>
+              Kredit Pajak Luar Negeri adalah pengkreditan <strong>PPh Luar Negeri</strong> — yaitu pajak penghasilan yang <strong>terutang, dibayar, atau dipotong di luar negeri</strong> — terhadap PPh yang terutang di Indonesia.
             </div>
             <p><strong>Dasar Hukum:</strong></p>
             <ul>
-              <li>Pasal 24 UU PPh</li>
-              <li>PMK No. 192/PMK.03/2018</li>
-              <li>PMK No. 81 Tahun 2024 — Ketentuan Perpajakan dalam Rangka Pelaksanaan Sistem Inti Administrasi Perpajakan (Coretax)</li>
+              <li>Pasal 24 UU PPh No. 36 Tahun 2008</li>
+              <li>Keputusan Menteri Keuangan Nomor 192/PMK.03/2018</li>
             </ul>
-            <p><strong>Tujuan:</strong> Menghindari pemajakan berganda (<em>double taxation</em>) atas penghasilan yang sama — yang sudah dipajaki di negara sumber dan berpotensi dipajaki lagi di Indonesia karena sistem <em>worldwide income</em>.</p>
+            <p><strong>Prinsip Dasar:</strong> Wajib Pajak dalam negeri terutang pajak atas Penghasilan Kena Pajak yang berasal dari <strong>seluruh penghasilan</strong>, termasuk penghasilan yang diterima atau diperoleh dari luar negeri.</p>
           `
         },
 
-        /* --- 5 Pokok Aturan --- */
+        /* --- Timing Penggabungan --- */
+        {
+          type: 'card',
+          variant: 'card-gold',
+          icon: '📅',
+          title: 'Timing Penggabungan Penghasilan Luar Negeri',
+          html: '<p>Penghasilan dari luar negeri digabungkan dengan penghasilan dalam negeri pada tahun pajak yang berbeda tergantung jenis penghasilannya:</p>',
+          extra: [
+            {
+              type: 'table',
+              headers: ['Jenis Penghasilan', 'Tahun Pajak Penggabungan'],
+              rows: [
+                { cells: ['<strong>Penghasilan dari usaha</strong>', 'Tahun pajak <strong>diperolehnya</strong> penghasilan tersebut'], variant: ['td-label',''] },
+                { cells: ['<strong>Penghasilan lainnya</strong>', 'Tahun pajak <strong>diterimanya</strong> penghasilan tersebut'], variant: ['td-label',''] },
+                { cells: ['<strong>Dividen</strong> [Pasal 18 ayat (2)]', 'Tahun pajak pada saat <strong>perolehan dividen</strong> (256/PMK.03/2008)'], variant: ['td-label',''] }
+              ]
+            },
+            {
+              type: 'callout',
+              variant: 'gold',
+              icon: '🔑',
+              title: 'Aturan Kunci',
+              html: 'Pengkreditan dilakukan dalam <strong>tahun pajak digabungkannya penghasilan</strong>. Berbeda jenis penghasilan → bisa berbeda tahun pajak penggabungan.'
+            }
+          ]
+        },
+
+        /* --- Batas Pengkreditan --- */
+        {
+          type: 'card',
+          variant: 'card-p24',
+          icon: '⚖️',
+          title: 'Batas Pengkreditan PPh Luar Negeri',
+          html: `
+            <div class="callout p24" style="margin-top:0;font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.8;">
+              <strong>Pengkreditan PPh Luar Negeri</strong> dilakukan menurut perbandingan antara <strong>penghasilan dari luar negeri</strong> terhadap <strong>Penghasilan Kena Pajak</strong> dikalikan dengan <strong>PPh terutang atas PKP</strong>, dengan batasan:
+            </div>
+            <div class="callout gold">
+              <div class="callout-title">⚠️ Dua Batas Penting</div>
+              <ul style="margin-top:6px;">
+                <li>Paling tinggi sama dengan <strong>jumlah pajak yang dibayar atau terutang di luar negeri</strong></li>
+                <li>Tidak boleh melebihi <strong>Jumlah Tertentu</strong> — yaitu hasil perbandingan di atas</li>
+                <li><strong>Pengecualian:</strong> Jika PKP lebih kecil dari penghasilan luar negeri, maka batas maksimalnya sama dengan <strong>PPh terutang atas PKP</strong></li>
+              </ul>
+            </div>
+            <p><strong>PKP yang digunakan</strong> untuk perhitungan ini <strong>TIDAK termasuk</strong>:</p>
+            <ul>
+              <li>Penghasilan yang dikenai <strong>PPh bersifat final</strong>, dan/atau</li>
+              <li>Penghasilan yang dikenai <strong>PPh tersendiri</strong></li>
+            </ul>
+          `
+        },
+
+        /* --- Per Negara --- */
+        {
+          type: 'callout',
+          variant: 'p24',
+          icon: '🌍',
+          title: 'Perhitungan Per Negara',
+          html: 'Apabila penghasilan luar negeri berasal dari <strong>beberapa negara</strong>, penghitungan kredit pajak dilakukan <strong>untuk masing-masing negara</strong>. Perhitungan tidak boleh digabung menjadi satu angka global.'
+        },
+
+        /* --- Kelebihan Kredit --- */
+        {
+          type: 'card',
+          variant: 'card-gold',
+          icon: '⚠️',
+          title: 'Kelebihan Kredit Pajak Luar Negeri',
+          html: '<p>Dalam hal jumlah Pajak Penghasilan yang dibayar atau terutang di luar negeri <strong>melebihi</strong> jumlah kredit pajak yang diperkenankan, kelebihan tersebut:</p>',
+          extra: [
+            {
+              type: 'grid-cards',
+              cols: 3,
+              items: [
+                { variant: 'p24', icon: '🚫', title: 'TIDAK dapat diperhitungkan', html: 'Kelebihan tidak dapat diperhitungkan dengan Pajak Penghasilan yang terutang tahun berikutnya.' },
+                { variant: 'p24', icon: '🚫', title: 'TIDAK boleh dibiayakan', html: 'Kelebihan tidak boleh dibebankan sebagai biaya atau pengurang penghasilan.' },
+                { variant: 'p24', icon: '🚫', title: 'TIDAK dapat direstitusi', html: 'Kelebihan tidak dapat dimintakan restitusi kepada negara.' }
+              ]
+            }
+          ]
+        },
+
+        /* --- Bukti Pembayaran --- */
         {
           type: 'card',
           variant: '',
-          icon: '📋',
-          title: 'Lima Pokok Aturan PPh 24',
-          html: '<p>Lima prinsip dasar yang mengatur pengkreditan pajak luar negeri:</p>',
+          icon: '📄',
+          title: 'Bukti Pemenuhan Pembayaran PPh Luar Negeri',
+          html: '<p>Bagi WPDN yang mengkreditkan PPh Luar Negeri, bukti pemenuhan pembayaran dapat berupa:</p>',
           extra: [
             {
-              type: 'reveal',
-              icon: '1️⃣',
-              title: 'Pengkreditan Pajak Luar Negeri',
-              body: '<p>Pajak yang dibayar atau terutang di luar negeri atas penghasilan yang diterima atau diperoleh dari luar negeri boleh dikreditkan terhadap PPh yang terutang atas seluruh penghasilan Wajib Pajak dalam negeri.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '2️⃣',
-              title: 'Timing Pengkreditan',
-              body: '<p>Pengkreditan dilakukan dalam tahun pajak digabungkannya penghasilan dari luar negeri dengan penghasilan di Indonesia. Tujuan: menghindari pemajakan berganda.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '3️⃣',
-              title: 'Batasan Kredit Pajak',
-              body: '<p>Besarnya kredit pajak adalah sebesar pajak penghasilan yang dibayar atau terutang di luar negeri, <strong>tetapi tidak boleh melebihi</strong> penghitungan pajak yang terutang atas seluruh penghasilan.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '4️⃣',
-              title: 'Penentuan Sumber Penghasilan',
-              body: '<p>Dalam menghitung batas jumlah pajak yang boleh dikreditkan, sumber penghasilan ditentukan berdasarkan 8 kriteria sesuai jenis penghasilan (lihat bagian selanjutnya).</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '5️⃣',
-              title: 'Pengembalian Pajak',
-              body: '<p>Apabila pajak atas penghasilan dari luar negeri yang dikreditkan ternyata kemudian dikurangkan atau dikembalikan, maka pajak yang terutang <strong>harus ditambah</strong> dengan jumlah tersebut pada tahun pengurangan atau pengembalian itu dilakukan.</p>'
+              type: 'two-col',
+              left: {
+                variant: 'p24',
+                title: '📎 Jenis Bukti',
+                html: `
+                  <ul>
+                    <li>Salinan <strong>bukti pembayaran</strong> PPh Luar Negeri; atau</li>
+                    <li>Salinan <strong>bukti pemotongan</strong> PPh Luar Negeri; atau</li>
+                    <li>Salinan <strong>bukti lainnya</strong> yang dapat menunjukkan adanya pembayaran atau pemotongan PPh Luar Negeri.</li>
+                  </ul>
+                `
+              },
+              right: {
+                variant: 'p25',
+                title: '📋 Informasi Minimal',
+                html: `
+                  <ul>
+                    <li><strong>Nama WPDN</strong></li>
+                    <li><strong>Jumlah PPh Luar Negeri</strong></li>
+                  </ul>
+                `
+              }
             }
           ]
         },
@@ -197,36 +254,36 @@ window.TaxQuestContent = {
         /* --- 8 Kriteria Sumber Penghasilan --- */
         {
           type: 'card',
-          variant: '',
+          variant: 'card-p24',
           icon: '🌍',
           title: 'Delapan Kriteria Penentuan Sumber Penghasilan',
-          html: '<p>Dalam menghitung batas jumlah pajak yang boleh dikreditkan, sumber penghasilan ditentukan berdasarkan jenis penghasilan sebagai berikut:</p>',
+          html: '<p>Sumber penghasilan ditentukan berdasarkan jenis penghasilan untuk menghitung batas jumlah pajak yang boleh dikreditkan:</p>',
           extra: [
             {
               type: 'table',
               headers: ['#', 'Jenis Penghasilan', 'Negara Sumber'],
               rows: [
-                { cells: ['A', 'Penghasilan dari saham dan sekuritas lainnya serta keuntungan dari pengalihan saham dan sekuritas lainnya', 'Negara tempat <strong>badan yang menerbitkan</strong> saham atau sekuritas tersebut didirikan atau bertempat kedudukan'], variant: ['td-label','',''] },
-                { cells: ['B', 'Penghasilan berupa bunga, royalti, dan sewa sehubungan dengan penggunaan harta gerak', 'Negara tempat <strong>pihak yang membayar atau dibebani</strong> bunga, royalti, atau sewa tersebut bertempat kedudukan atau berada'], variant: ['td-label','',''] },
-                { cells: ['C', 'Penghasilan berupa sewa sehubungan dengan penggunaan harta tak gerak', 'Negara tempat <strong>harta tersebut terletak</strong>'], variant: ['td-label','',''] },
-                { cells: ['D', 'Penghasilan berupa imbalan sehubungan dengan jasa, pekerjaan dan kegiatan', 'Negara tempat <strong>pihak yang membayar atau dibebani imbalan</strong> tersebut bertempat kedudukan atau berada'], variant: ['td-label','',''] },
-                { cells: ['E', 'Penghasilan bentuk usaha tetap (BUT)', 'Negara tempat <strong>bentuk usaha tetap</strong> tersebut menjalankan usaha atau melakukan kegiatan'], variant: ['td-label','',''] },
-                { cells: ['F', 'Penghasilan dari pengalihan sebagian atau seluruh hak penambangan atau tanda turut serta dalam pembiayaan atau permodalan dalam perusahaan pertambangan', 'Negara tempat <strong>lokasi penambangan</strong> berada'], variant: ['td-label','',''] },
-                { cells: ['G', 'Keuntungan karena pengalihan harta tetap', 'Negara tempat <strong>harta tetap</strong> berada'], variant: ['td-label','',''] },
-                { cells: ['H', 'Keuntungan karena pengalihan harta yang menjadi bagian dari suatu bentuk usaha tetap', 'Negara tempat <strong>bentuk usaha tetap</strong> berada'], variant: ['td-label','',''] }
+                { cells: ['A', 'Saham &amp; sekuritas lainnya; keuntungan pengalihan saham/sekuritas', 'Negara tempat <strong>badan yang menerbitkan</strong> saham/sekuritas didirikan atau bertempat kedudukan'], variant: ['td-label','',''] },
+                { cells: ['B', 'Bunga, royalti, sewa harta gerak', 'Negara tempat <strong>pihak yang membayar atau dibebani</strong> bunga/royalti/sewa berkedudukan'], variant: ['td-label','',''] },
+                { cells: ['C', 'Sewa harta tak gerak', 'Negara tempat <strong>harta tersebut terletak</strong>'], variant: ['td-label','',''] },
+                { cells: ['D', 'Imbalan jasa, pekerjaan &amp; kegiatan', 'Negara tempat <strong>pihak yang membayar atau dibebani</strong> imbalan berkedudukan'], variant: ['td-label','',''] },
+                { cells: ['E', 'Penghasilan Bentuk Usaha Tetap (BUT)', 'Negara tempat <strong>BUT</strong> menjalankan usaha atau melakukan kegiatan'], variant: ['td-label','',''] },
+                { cells: ['F', 'Pengalihan hak penambangan / turut serta pembiayaan perusahaan pertambangan', 'Negara tempat <strong>lokasi penambangan</strong> berada'], variant: ['td-label','',''] },
+                { cells: ['G', 'Keuntungan pengalihan harta tetap', 'Negara tempat <strong>harta tetap</strong> berada'], variant: ['td-label','',''] },
+                { cells: ['H', 'Keuntungan pengalihan harta bagian dari BUT', 'Negara tempat <strong>BUT</strong> berada'], variant: ['td-label','',''] }
               ]
             },
             {
               type: 'callout',
               variant: 'gold',
               icon: '🧭',
-              title: 'Logika Penentuan Sumber',
-              html: '<strong>Aset fisik</strong> → negara lokasi. <strong>Pembayar</strong> → negara pembayar. <strong>Entitas penerbit</strong> → negara pendirian. <strong>BUT</strong> → negara operasional.'
+              title: 'Logika Cepat',
+              html: '<strong>Aset fisik</strong> → negara lokasi · <strong>Pembayar</strong> → negara pembayar · <strong>Entitas</strong> → negara pendirian · <strong>BUT</strong> → negara operasional'
             }
           ]
         },
 
-        /* --- DRAG & DROP: 8 Kriteria --- */
+        /* --- DRAG DROP --- */
         {
           type: 'dragdrop',
           id: 'dd-sumber',
@@ -235,12 +292,12 @@ window.TaxQuestContent = {
           desc: 'Seret setiap jenis penghasilan ke negara sumber yang tepat. +5 XP per jawaban benar.',
           xpPerCorrect: 5,
           items: [
-            { id: 'saham',    text: 'Saham & sekuritas',        zone: 'penerbit' },
-            { id: 'bunga',    text: 'Bunga & royalti',          zone: 'pembayar' },
-            { id: 'sewa',     text: 'Sewa harta tak gerak',     zone: 'lokasi'   },
-            { id: 'but',      text: 'Penghasilan BUT',          zone: 'but'      },
-            { id: 'jasa',     text: 'Imbalan jasa',             zone: 'pembayar' },
-            { id: 'harta',    text: 'Pengalihan harta tetap',   zone: 'lokasi'   }
+            { id: 'saham', text: 'Saham &amp; sekuritas',     zone: 'penerbit' },
+            { id: 'bunga', text: 'Bunga &amp; royalti',       zone: 'pembayar' },
+            { id: 'sewa',  text: 'Sewa harta tak gerak',      zone: 'lokasi'   },
+            { id: 'but',   text: 'Penghasilan BUT',           zone: 'but'      },
+            { id: 'jasa',  text: 'Imbalan jasa',              zone: 'pembayar' },
+            { id: 'harta', text: 'Pengalihan harta tetap',    zone: 'lokasi'   }
           ],
           zones: [
             { id: 'penerbit', title: '🏢 Negara Penerbit' },
@@ -250,375 +307,208 @@ window.TaxQuestContent = {
           ]
         },
 
-        /* --- Formula --- */
-        {
-          type: 'card',
-          variant: 'card-gold',
-          icon: '🧮',
-          title: 'Formula Kunci: Jumlah Tertentu',
-          html: `
-            <p>Batas maksimal kredit pajak dihitung secara proporsional dengan formula:</p>
-            <div class="callout gold" style="text-align:center;font-size:16px;font-family:'JetBrains Mono',monospace;padding:22px 16px;">
-              <div style="font-weight:800;letter-spacing:-0.02em;">
-                JUMLAH TERTENTU = 
-                <span style="display:inline-block;vertical-align:middle;text-align:center;margin:0 6px;">
-                  <span style="border-bottom:2px solid currentColor;padding:0 10px;">Penghasilan Luar Negeri</span><br>
-                  <span style="padding:0 10px;">Penghasilan Kena Pajak</span>
-                </span>
-                × PPh Terutang
-              </div>
-            </div>
-            <div class="grid grid-3" style="margin-top:16px;">
-              <div class="card" style="padding:14px;">
-                <div style="font-size:12px;font-weight:800;color:var(--p24);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">Penghasilan LN</div>
-                <div style="font-size:13px;color:var(--ink-3);">Penghasilan neto dari luar negeri yang digabungkan dalam tahun pajak</div>
-              </div>
-              <div class="card" style="padding:14px;">
-                <div style="font-size:12px;font-weight:800;color:var(--p24);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">PKP</div>
-                <div style="font-size:13px;color:var(--ink-3);">Penghasilan Kena Pajak total (LN + DN) setelah koreksi fiskal</div>
-              </div>
-              <div class="card" style="padding:14px;">
-                <div style="font-size:12px;font-weight:800;color:var(--p24);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;">PPh Terutang</div>
-                <div style="font-size:13px;color:var(--ink-3);">PPh terutang atas PKP sesuai tarif Pasal 17 UU PPh</div>
-              </div>
-            </div>
-            <div class="callout p24" style="margin-top:16px;text-align:center;">
-              <div style="font-family:'JetBrains Mono',monospace;font-weight:800;font-size:14px;color:var(--p24-dark);">
-                PPh 24 = min ( PPh Luar Negeri , Jumlah Tertentu , Pajak menurut P3B )
-              </div>
-              <div style="font-size:12px;margin-top:6px;color:var(--ink-3);">Nilai terkecil dari tiga komponen yang dapat dikreditkan</div>
-            </div>
-            <p style="margin-top:14px;font-size:13px;color:var(--ink-3);"><strong>Catatan penting:</strong></p>
-            <ul style="font-size:13.5px;">
-              <li>Perhitungan dilakukan <strong>per jenis penghasilan</strong> untuk <strong>tiap negara/yurisdiksi</strong></li>
-              <li>Jika WPDN menerima penghasilan dari negara yang memiliki P3B dengan Indonesia yang berlaku efektif, jumlah maksimal pemajakan di negara sumber juga menjadi penentu</li>
-            </ul>
-          `
-        },
-
-        /* --- SIMULATOR PPh 24 --- */
-        {
-          type: 'simulator',
-          id: 'sim-p24',
-          variant: 'sim-p24',
-          icon: '🧪',
-          title: 'Simulator PPh 24',
-          sub: 'Masukkan angka, lihat perhitungan kredit pajak secara real-time',
-          mode: 'p24-basic',
-          fields: [
-            { key: 'dn',      label: 'Penghasilan DN',     type: 'number', default: 4000000000, step: 1000000 },
-            { key: 'ln',      label: 'Penghasilan LN',     type: 'number', default: 1000000000, step: 1000000 },
-            { key: 'pphln',   label: 'PPh Luar Negeri',    type: 'number', default: 300000000,  step: 1000000 },
-            { key: 'tarif',   label: 'Tarif PPh Badan',    type: 'select', default: '0.22', options: [
-              { value: '0.22', label: '22%' },
-              { value: '0.25', label: '25%' }
-            ]}
-          ]
-        },
-
-        /* --- Contoh 1: Memori Penjelasan (PT A / Z Inc) --- */
+        /* --- Contoh 1: PT A Jakarta --- */
         {
           type: 'card',
           variant: 'card-p24',
-          icon: '📖',
-          title: 'Contoh 1: Memori Penjelasan Pasal 24 UU PPh',
+          icon: '🏢',
+          title: 'Contoh 1: PT A Jakarta — Penentuan Tahun Penggabungan',
           html: `
-            <p><strong>Kasus:</strong> PT A (WPDN) adalah pemegang saham tunggal Z Inc. yang berdomisili di Negara X. Z Inc. dalam tahun 2025 memperoleh keuntungan sebesar US$ 100.000,00. Pajak Penghasilan yang berlaku di Negara X adalah 48% dan Pajak Dividen adalah 38%.</p>
-            <p><strong>Perhitungan pajak atas dividen:</strong></p>
+            <p><strong>PT A di Jakarta dalam Tahun Pajak 2017 menerima dan memperoleh penghasilan neto dari sumber luar negeri:</strong></p>
+            <ol style="margin-left:20px;font-size:13.5px;line-height:1.8;">
+              <li>Hasil usaha di <strong>Singapura</strong> tahun pajak 2017 sebesar Rp 800.000.000</li>
+              <li>Dividen atas saham "X Ltd." di <strong>Australia</strong> Rp 200.000.000 — berasal dari keuntungan tahun 2016 yang dibayar tahun 2017</li>
+              <li>Dividen dari penyertaan 70% pada "Y Corporation" di <strong>Hongkong</strong> Rp 75.000.000 — saham tidak diperdagangkan di bursa efek, berasal dari keuntungan 2016</li>
+              <li>Bunga kwartal IV 2017 dari "Z Corporation" di <strong>Kuala Lumpur</strong> Rp 100.000.000 — <em>baru akan diterima bulan Juli 2018</em></li>
+            </ol>
           `,
           extra: [
             {
-              type: 'calc',
-              steps: [
-                { label: 'Keuntungan Z Inc.', html: 'US$ 100.000,00', variant: 'p24' },
-                { label: 'Pajak Penghasilan (48%)', html: 'US$ 48.000,00 <em>(pengurang)</em>', variant: 'p24' },
-                { label: 'Laba setelah pajak', html: 'US$ 52.000,00', variant: 'p24' },
-                { label: 'Pajak Dividen (38% × 52.000)', html: 'US$ 19.760,00 <em>(pengurang)</em>', variant: 'p24' },
-                { label: 'Dividen dikirim ke Indonesia', html: 'US$ 32.240,00', variant: 'p24' }
-              ],
-              final: 'PPh 24 yang dapat dikreditkan = US$ 19.760,00'
+              type: 'table',
+              headers: ['Penghasilan', 'Tahun Penggabungan', 'Alasan'],
+              rows: [
+                { cells: ['a. Hasil usaha Singapura', '<strong>2017</strong>', 'Tahun diperolehnya penghasilan usaha'], variant: ['td-label','td-p24',''] },
+                { cells: ['b. Dividen X Ltd.', '<strong>2017</strong>', 'Tahun diterimanya dividen (dibayar 2017)'], variant: ['td-label','td-p24',''] },
+                { cells: ['c. Dividen Y Corp.', '<strong>2017</strong>', 'Sesuai penetapan saat perolehan dividen'], variant: ['td-label','td-p24',''] },
+                { cells: ['d. Bunga Z Corp.', '<strong>2018</strong>', 'Baru diterima Juli 2018 — tahun diterimanya'], variant: ['td-label','td-p25',''] }
+              ]
             },
             {
               type: 'callout',
               variant: 'warn',
               icon: '⚠️',
-              title: 'Mengapa bukan US$ 48.000?',
-              html: 'Pajak Penghasilan Badan (48%) <strong>TIDAK DAPAT</strong> dikreditkan karena bukan pajak yang langsung dikenakan atas penghasilan yang diterima atau diperoleh PT A. Yang dapat dikreditkan adalah pajak dividen sebesar US$ 19.760,00 — karena ini pajak yang langsung dikenakan atas penghasilan PT A.'
+              title: 'Pelajaran Kunci',
+              html: 'Tidak semua penghasilan LN digabungkan di tahun yang sama. <strong>Perhatikan timing</strong> — bisa ada penghasilan yang diperoleh tahun ini tapi baru digabungkan tahun depan.'
             }
           ]
         },
 
-        /* --- Contoh 2: Penggabungan Penghasilan --- */
+        /* --- Contoh 2: PT Indologo Satu --- */
         {
           type: 'card',
-          variant: '',
+          variant: 'card-p24',
           icon: '📊',
-          title: 'Contoh 2: Penggabungan Penghasilan (PT Ciptanindo Satu)',
-          html: '<p>PT Ciptanindo Satu dalam Tahun Pajak 2025 menerima dan memperoleh penghasilan neto dari luar Indonesia sebagai berikut:</p>',
+          title: 'Contoh 2: PT Indologo Satu — Penggabungan Multi-Negara',
+          html: `
+            <p><strong>WPDN, PT Indologo Satu dalam Tahun Pajak 2018 menerima dan memperoleh penghasilan neto dari luar Indonesia:</strong></p>
+            <ul style="font-size:13.5px;line-height:1.7;">
+              <li><strong>Penghasilan usaha</strong> dari cabang di negara V: Rp 800.000.000</li>
+              <li><strong>Dividen dari XYZ Ltd.</strong> (negara W): Rp 200.000.000 — penyertaan 25%, saham di bursa efek, dari laba 2016 yang ditetapkan RUPS 2017, diterima Feb 2018</li>
+              <li><strong>Bunga semester II 2017</strong> dari STU Sdn. Bhd. (negara Y): Rp 100.000.000 — diterima Juli 2018</li>
+              <li><strong>Keuntungan penjualan saham XYZ Ltd.</strong> (negara W): Rp 50.000.000 — diterima Desember 2018</li>
+              <li><strong>Dividen dari PQR Corp.</strong> (negara X): Rp 75.000.000 — penyertaan 75%, saham tidak di bursa, dari laba 2017</li>
+            </ul>
+          `,
           extra: [
-            {
-              type: 'table',
-              headers: ['Sumber', 'Jenis', 'Jumlah', 'Timing Penggabungan'],
-              rows: [
-                { cells: ['Negara V — cabang', 'Penghasilan usaha', 'Rp 800.000.000', 'Tahun diperolehnya penghasilan usaha (2025)'], variant: ['td-label','','amt',''] },
-                { cells: ['Negara W — XYZ Ltd.', 'Dividen', 'Rp 200.000.000', 'Tahun diterimanya dividen (Feb 2025)'], variant: ['td-label','','amt',''] },
-                { cells: ['Negara Y — STU Sdn. Bhd.', 'Bunga semester II 2024', 'Rp 100.000.000', 'Tahun diterimanya bunga (Juli 2025)'], variant: ['td-label','','amt',''] },
-                { cells: ['Negara W — XYZ Ltd.', 'Keuntungan penjualan saham', 'Rp 50.000.000', 'Tahun diterimanya keuntungan (Des 2025)'], variant: ['td-label','','amt',''] },
-                { cells: ['Negara X — PQR Corp.', 'Dividen (non-bursa)', 'Rp 75.000.000', 'Sesuai PMK tentang penetapan saat diperoleh dividen (2025)'], variant: ['td-label','','amt',''] }
-              ]
-            },
             {
               type: 'callout',
               variant: 'p24',
               icon: '📌',
-              title: 'Kesimpulan',
-              html: 'Seluruh penghasilan dari luar negeri tersebut digabungkan dengan penghasilan dalam negeri pada <strong>Tahun Pajak 2025</strong>, sesuai tahun pajak diperoleh/diterimanya penghasilan masing-masing.'
+              title: 'Kesimpulan Penggabungan',
+              html: 'Seluruh penghasilan tersebut digabungkan dengan penghasilan dalam negeri pada <strong>Tahun Pajak 2018</strong> — sesuai tahun pajak diperoleh atau diterimanya masing-masing penghasilan. Dividen dari PQR Corp. (non-bursa) mengikuti ketentuan PMK tentang penetapan saat diperolehnya dividen, yang dalam contoh ini ditetapkan diperoleh pada 2018.'
             }
           ]
         },
 
-        /* --- Contoh 3: Kerugian Luar Negeri --- */
-        {
-          type: 'card',
-          variant: '',
-          icon: '📉',
-          title: 'Contoh 3: Perlakuan Kerugian Luar Negeri (PT Ciptanindo Dua)',
-          html: '<p><strong>Prinsip:</strong> Kerugian yang diderita di luar negeri <strong>tidak boleh</strong> digabungkan dengan penghasilan di Indonesia. <strong>Pengecualian:</strong> kerugian yang berasal dari harta atau kegiatan yang memiliki hubungan efektif dengan cabang/perwakilan di luar negeri dapat diperhitungkan terhadap penghasilan neto cabang tersebut.</p><p><strong>Data PT Ciptanindo Dua (2025):</strong></p>',
-          extra: [
-            {
-              type: 'table',
-              headers: ['Lokasi', 'Komponen', 'Jumlah'],
-              rows: [
-                { cells: ['Negara X (cabang)', 'Penghasilan neto komersial', 'Rp 1.500.000.000'], variant: ['td-label','','amt'] },
-                { cells: ['Negara X (cabang)', 'Kerugian penjualan harta <em>(hubungan efektif)</em>', '(Rp 500.000.000)'], variant: ['td-label','','amt'] },
-                { cells: ['Negara X (cabang)', '<strong>Penghasilan neto</strong>', '<strong>Rp 1.000.000.000</strong>'], variant: ['td-label','','amt'] },
-                { cells: ['Negara Y', 'Penghasilan bunga', 'Rp 3.000.000.000'], variant: ['td-label','','amt'] },
-                { cells: ['Negara Z (VWX Ltd.)', 'Dividen (saham di bursa)', 'Rp 750.000.000'], variant: ['td-label','','amt'] },
-                { cells: ['Negara Z', 'Kerugian penjualan harta <em>(tidak ada cabang)</em>', 'Rp 0 <em>(tidak digabung)</em>'], variant: ['td-label','','amt'] },
-                { cells: ['Dalam negeri', 'Penghasilan neto', 'Rp 4.000.000.000'], variant: ['td-label','','amt'] }
-              ]
-            },
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Penghasilan neto luar negeri', html: 'Negara X: Rp 1.000.000.000<br>Negara Y: Rp 3.000.000.000<br>Negara Z: Rp 750.000.000<br><strong>Jumlah LN = Rp 4.750.000.000</strong>', variant: 'p24' },
-                { label: 'Penghasilan neto dalam negeri', html: 'Rp 4.000.000.000', variant: 'p24' },
-                { label: 'Jumlah penghasilan neto fiskal', html: 'Rp 8.750.000.000', variant: 'p24' },
-                { label: 'Penghasilan Kena Pajak', html: 'Rp 8.750.000.000', variant: 'p24' }
-              ]
-            },
-            {
-              type: 'callout',
-              variant: 'warn',
-              icon: '🔑',
-              title: 'Kunci Pemahaman',
-              html: '<strong>Kerugian Negara X dapat diperhitungkan</strong> karena memiliki hubungan efektif dengan cabang di Negara X. <strong>Kerugian Negara Z tidak dapat digabungkan</strong> karena tidak ada cabang/perwakilan di Negara Z.'
-            }
-          ]
-        },
-
-        /* --- Contoh 4: Kredit per Negara --- */
+        /* --- Contoh 3: PT B Bandung --- */
         {
           type: 'card',
           variant: 'card-p24',
           icon: '🧮',
-          title: 'Contoh 4: Penghitungan Kredit Pajak per Negara (PT Ciptanindo Tiga)',
+          title: 'Contoh 3: PT B Bandung — Batas Kredit Multi-Negara dengan Kerugian',
           html: `
-            <p><strong>Data (Tahun Pajak 2025):</strong></p>
-            <ul>
-              <li>Negara X — penghasilan usaha: <strong>Rp 1.000.000.000</strong> · PPh LN: <strong>Rp 300.000.000</strong></li>
-              <li>Negara Y — penghasilan bunga: <strong>Rp 3.000.000.000</strong> · PPh LN: <strong>Rp 450.000.000</strong> (tidak ada pengurang bruto)</li>
-              <li>Negara Z — kerugian penjualan harta: <strong>Rp 250.000.000</strong></li>
-              <li>Penghasilan neto dalam negeri: <strong>Rp 4.000.000.000</strong></li>
-              <li>Tidak ada P3B antara Indonesia dengan negara X, Y, dan Z</li>
-            </ul>
+            <p><strong>PT B di Bandung memperoleh penghasilan neto dalam tahun 2020:</strong></p>
+            <table class="tbl" style="margin-top:8px;">
+              <thead><tr><th>Asal Penghasilan</th><th class="amt">Ph Neto</th><th class="amt">Tarif</th><th class="amt">PPh LN</th></tr></thead>
+              <tbody>
+                <tr><td class="td-label">a. Laba dari negara X</td><td class="amt">Rp 1.000.000.000</td><td class="amt">40%</td><td class="amt">Rp 400.000.000</td></tr>
+                <tr><td class="td-label">b. Laba dari negara Y</td><td class="amt">Rp 3.000.000.000</td><td class="amt">20%</td><td class="amt">Rp 600.000.000</td></tr>
+                <tr><td class="td-label">c. Rugi di negara Z</td><td class="amt">(Rp 2.500.000.000)</td><td class="amt">—</td><td class="amt">—</td></tr>
+                <tr class="row-subtotal"><td>Jumlah penghasilan luar negeri</td><td class="amt">Rp 4.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td>Penghasilan dalam negeri</td><td class="amt">Rp 4.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr class="row-total"><td>Total Ph Neto</td><td class="amt">Rp 8.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td><strong>PPh terutang (tarif Pasal 17)</strong></td><td class="amt"><strong>Rp 1.760.000.000</strong></td><td class="amt"></td><td class="amt"></td></tr>
+              </tbody>
+            </table>
           `,
           extra: [
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Langkah 1 — Hitung PKP', html: 'Penghasilan LN = Rp 1.000.000.000 + Rp 3.000.000.000 = <strong>Rp 4.000.000.000</strong><br>(Kerugian Negara Z tidak digabung)<br>PKP = Rp 4.000.000.000 + Rp 4.000.000.000 = <strong>Rp 8.000.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 2 — Hitung PPh Terutang', html: '22% × Rp 8.000.000.000 = <strong>Rp 1.760.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 3 — Jumlah Tertentu Negara X', html: '(1.000.000.000 / 8.000.000.000) × 1.760.000.000 = <strong>Rp 220.000.000</strong><br>PPh LN = Rp 300.000.000<br>→ Kredit Negara X = <strong>Rp 220.000.000</strong> <em>(terkecil)</em>', variant: 'p24' },
-                { label: 'Langkah 4 — Jumlah Tertentu Negara Y', html: '(3.000.000.000 / 8.000.000.000) × 1.760.000.000 = <strong>Rp 660.000.000</strong><br>PPh LN = Rp 450.000.000<br>→ Kredit Negara Y = <strong>Rp 450.000.000</strong> <em>(terkecil)</em>', variant: 'p24' }
-              ],
-              final: 'Total PPh 24 = Rp 220.000.000 + Rp 450.000.000 = Rp 670.000.000'
-            },
-            {
-              type: 'callout',
-              variant: 'p24',
-              icon: '📌',
-              title: 'Catatan',
-              html: 'Kerugian dari Negara Z <strong>tidak dapat digabungkan</strong> dalam menghitung Penghasilan Kena Pajak karena tidak ada cabang atau perwakilan di Negara Z.'
-            }
-          ]
-        },
-
-        /* --- Contoh 5: Pengaruh P3B --- */
-        {
-          type: 'card',
-          variant: 'card-gold',
-          icon: '🌐',
-          title: 'Contoh 5: Pengaruh P3B (Persetujuan Penghindaran Pajak Berganda)',
-          html: `
-            <p><strong>Skenario:</strong> Melanjutkan Contoh 4, tetapi kini <strong>terdapat P3B</strong> Indonesia–Negara Y yang berlaku efektif. P3B mengatur pemajakan atas penghasilan bunga di negara sumber paling tinggi <strong>10%</strong> dari jumlah bruto. Namun, atas penghasilan bunga tersebut PT Ciptanindo Tiga dikenai PPh Luar Negeri berdasarkan ketentuan domestik di Negara Y sebesar Rp 450.000.000.</p>
-          `,
-          extra: [
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Langkah 1 — Hitung ulang PKP dan PPh Terutang', html: 'Penghasilan bunga dari Negara Y: Rp 3.000.000.000<br>Penghasilan neto DN: Rp 4.000.000.000<br>PKP = <strong>Rp 7.000.000.000</strong><br>PPh Terutang = 22% × 7.000.000.000 = <strong>Rp 1.540.000.000</strong>', variant: 'gold' },
-                { label: 'Langkah 2 — Bandingkan 3 komponen', html: '<strong>A. Pajak menurut P3B:</strong> 10% × 3.000.000.000 = <strong>Rp 300.000.000</strong><br><strong>B. PPh Luar Negeri aktual:</strong> Rp 450.000.000<br><strong>C. Jumlah Tertentu:</strong> (3.000.000.000 / 7.000.000.000) × 1.540.000.000 = <strong>Rp 660.000.000</strong>', variant: 'gold' }
-              ],
-              final: 'PPh 24 = Nilai TERKECIL = Rp 300.000.000'
-            },
             {
               type: 'callout',
               variant: 'warn',
               icon: '⚠️',
-              title: 'Interpretasi',
-              html: 'Meskipun PT Ciptanindo Tiga membayar Rp 450.000.000 di Negara Y, yang dapat dikreditkan hanya <strong>Rp 300.000.000</strong> sesuai batas maksimal P3B. <strong>Selisih Rp 150.000.000 tidak dapat dikreditkan.</strong>'
-            }
-          ]
-        },
-
-        /* --- Contoh 6: Kerugian Dalam Negeri --- */
-        {
-          type: 'card',
-          variant: 'card-p24',
-          icon: '📉',
-          title: 'Contoh 6: Interaksi Kerugian Dalam Negeri (PT Ciptanindo Lima)',
-          html: `
-            <p><strong>Data:</strong> PT Ciptanindo Lima memiliki penghasilan usaha di Negara X sebesar Rp 1.000.000.000 dan rugi usaha di dalam negeri sebesar Rp 200.000.000. PPh Luar Negeri yang dibayar atas penghasilan usaha di Negara X adalah Rp 300.000.000.</p>
-          `,
-          extra: [
+              title: 'Prinsip Penting',
+              html: 'Kerugian di luar negeri <strong>tidak dapat dikompensasikan</strong> dengan penghasilan yang diterima atau diperoleh dari Indonesia. Kerugian negara Z Rp 2.500.000.000 <strong>tidak dikompensasikan</strong>.'
+            },
             {
               type: 'calc',
               steps: [
-                { label: 'Langkah 1 — Hitung PKP', html: 'Penghasilan usaha Negara X: Rp 1.000.000.000<br>Penghasilan neto (rugi) DN: (Rp 200.000.000)<br>PKP = <strong>Rp 800.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 2 — Hitung PPh Terutang', html: '22% × Rp 800.000.000 = <strong>Rp 176.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 3 — Hitung Jumlah Tertentu', html: '(1.000.000.000 / 800.000.000) × 176.000.000 = <strong>Rp 220.000.000</strong>', variant: 'p24' }
+                { label: 'Batas Maksimum Kredit untuk Negara X', html: '(1.000.000.000 / 8.000.000.000) × 1.760.000.000 = <strong>Rp 220.000.000</strong><br><em>Walaupun pajak yang telah dipotong di negara X = Rp 400.000.000</em><br>→ Kredit = <strong>Rp 220.000.000</strong>', variant: 'p24' },
+                { label: 'Batas Maksimum Kredit untuk Negara Y', html: '(3.000.000.000 / 8.000.000.000) × 1.760.000.000 = <strong>Rp 660.000.000</strong><br>Karena di negara Y hanya dipotong pajak = Rp 600.000.000<br>→ Kredit = <strong>Rp 600.000.000</strong>', variant: 'p24' }
               ],
-              final: 'PPh 24 = Rp 220.000.000'
-            },
-            {
-              type: 'callout',
-              variant: 'gold',
-              icon: '⚡',
-              title: 'Catatan Penting',
-              html: 'Apabila hasil perhitungan Jumlah Tertentu <strong>melebihi PPh terutang</strong>, maka batas maksimal kredit adalah sebesar PPh terutang tersebut. PPh 24 tidak boleh melebihi PPh terutang.'
+              final: 'Jumlah kredit pajak luar negeri yang diperkenankan = Rp 220.000.000 + Rp 600.000.000 = Rp 820.000.000'
             }
           ]
         },
 
-        /* --- Contoh 7: Batas Maksimal & Alokasi Proporsional --- */
+        /* --- Contoh 4: PT C Bogor --- */
         {
           type: 'card',
           variant: 'card-p24',
-          icon: '🎯',
-          title: 'Contoh 7: Batas Maksimal &amp; Alokasi Proporsional (PT Ciptanindo Enam)',
+          icon: '💡',
+          title: 'Contoh 4: PT C Bogor — Ketika PPh LN &lt; Jumlah Tertentu',
           html: `
-            <p><strong>Data (Tahun Pajak 2023):</strong></p>
-            <ul>
-              <li>Negara X — penghasilan usaha: Rp 1.000.000.000 · PPh LN: Rp 300.000.000</li>
-              <li>Negara Y — penghasilan usaha: Rp 3.000.000.000 · PPh LN: Rp 900.000.000</li>
-              <li>Negara Z — kerugian usaha: Rp 250.000.000</li>
-              <li>Kerugian dalam negeri: Rp 1.000.000.000</li>
-              <li>Tidak ada P3B</li>
-            </ul>
+            <p><strong>PT C di Bogor memperoleh penghasilan neto dalam tahun 2020:</strong></p>
+            <table class="tbl" style="margin-top:8px;">
+              <thead><tr><th>Asal Penghasilan</th><th class="amt">Ph Neto</th><th class="amt">Tarif</th><th class="amt">PPh LN</th></tr></thead>
+              <tbody>
+                <tr><td class="td-label">a. Laba dari negara X</td><td class="amt">Rp 1.000.000.000</td><td class="amt">20%</td><td class="amt">Rp 200.000.000</td></tr>
+                <tr><td>b. Penghasilan dalam negeri</td><td class="amt">Rp 1.000.000.000</td><td class="amt">—</td><td class="amt">—</td></tr>
+                <tr class="row-total"><td>Jumlah Ph Neto</td><td class="amt">Rp 2.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td><strong>PPh terutang (tarif Pasal 17)</strong></td><td class="amt"><strong>Rp 440.000.000</strong></td><td class="amt"></td><td class="amt"></td></tr>
+              </tbody>
+            </table>
           `,
           extra: [
             {
               type: 'calc',
               steps: [
-                { label: 'Langkah 1 — Hitung PKP', html: 'Penghasilan LN = 1.000.000.000 + 3.000.000.000 = Rp 4.000.000.000<br>Kerugian DN = (Rp 1.000.000.000)<br>PKP = <strong>Rp 3.000.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 2 — Hitung PPh Terutang', html: '22% × 3.000.000.000 = <strong>Rp 660.000.000</strong>', variant: 'p24' },
-                { label: 'Langkah 3 — Hitung kredit per negara', html: 'Negara X: JT = (1M/3M) × 660jt = Rp 220jt → Kredit = <strong>Rp 220.000.000</strong><br>Negara Y: JT = (3M/3M) × 660jt = Rp 660jt → Kredit = <strong>Rp 660.000.000</strong><br><em>Total kredit sebelum batas = Rp 880.000.000</em>', variant: 'p24' },
-                { label: 'Langkah 4 — Terapkan batas maksimal', html: 'Total kredit (Rp 880.000.000) <strong>lebih besar</strong> dari PPh Terutang (Rp 660.000.000)<br>→ Kredit dibatasi = <strong>Rp 660.000.000</strong>', variant: 'p24' }
-              ]
-            },
-            {
-              type: 'table',
-              headers: ['Negara', 'Alokasi Proporsional', 'Jumlah'],
-              rows: [
-                { cells: ['Negara X', '(1M / 4M) × Rp 660.000.000', 'Rp 165.000.000'], variant: ['td-label','','amt'] },
-                { cells: ['Negara Y', '(3M / 4M) × Rp 660.000.000', 'Rp 495.000.000'], variant: ['td-label','','amt'] },
-                { cells: ['<strong>Total</strong>', '', '<strong>Rp 660.000.000</strong>'], variant: ['td-label','','amt'] }
-              ]
+                { label: 'Batas Maksimum Kredit untuk Negara X', html: '(1.000.000.000 / 2.000.000.000) × 440.000.000 = <strong>Rp 220.000.000</strong><br>Karena di negara X hanya dipotong pajak <strong>Rp 200.000.000</strong><br>→ Kredit = <strong>Rp 200.000.000</strong> <em>(PPh LN lebih kecil)</em>', variant: 'p24' }
+              ],
+              final: 'Kredit pajak luar negeri yang diperkenankan = Rp 200.000.000'
             },
             {
               type: 'callout',
               variant: 'ok',
               icon: '✅',
-              title: 'Kunci Pemahaman',
-              html: 'Jika kredit pajak total melebihi PPh terutang, kredit dibatasi sebesar PPh terutang dan dialokasikan <strong>secara proporsional</strong> berdasarkan penghasilan neto dari masing-masing negara dibanding seluruh penghasilan neto dari luar negeri.'
+              title: 'Pelajaran Kunci',
+              html: 'Ketika <strong>PPh LN &lt; Jumlah Tertentu</strong>, kredit diambil sebesar PPh LN. Tidak ada yang "terbuang" — seluruh pajak luar negeri dapat dikreditkan.'
             }
           ]
         },
 
-        /* --- Catatan: Penghasilan Final & Istri --- */
+        /* --- Contoh 5: PT E Surabaya --- */
         {
           type: 'card',
-          variant: 'card-gold',
-          icon: '📌',
-          title: 'Catatan Penting: Penghasilan Final &amp; Penghasilan Istri',
+          variant: 'card-p24',
+          icon: '🏙️',
+          title: 'Contoh 5: PT E Surabaya — Dua Negara dengan Tarif Berbeda',
           html: `
-            <div class="callout gold" style="margin-top:0;">
-              <div class="callout-title">🟡 Aturan Pengecualian</div>
-              Dalam menghitung Penghasilan Kena Pajak untuk keperluan perhitungan PPh 24:
-              <ul style="margin-top:8px;">
-                <li>Penghasilan dalam negeri yang telah dikenai <strong>Pajak Penghasilan Pasal 4 ayat (2) UU PPh</strong> (PPh Final) <strong>TIDAK DIMASUKKAN</strong></li>
-                <li>Penghasilan istri yang dikenai <strong>Pajak Penghasilan tersendiri</strong> sebagaimana dimaksud dalam Pasal 8 ayat (1) UU PPh juga <strong>TIDAK DIMASUKKAN</strong></li>
-              </ul>
-            </div>
-            <p><strong>Mengapa ini penting?</strong> Kedua pengecualian ini mempengaruhi besaran PKP yang digunakan sebagai pembagi dalam formula Jumlah Tertentu, sehingga berpengaruh langsung pada kredit pajak yang dapat diklaim.</p>
-          `
-        },
-
-        /* --- Suami-Istri --- */
-        {
-          type: 'card',
-          variant: '',
-          icon: '👨‍👩‍👧',
-          title: 'Contoh 8: Suami-Istri (KK &amp; Pisah Harta)',
-          html: `
-            <p><strong>Data:</strong></p>
-            <ul>
-              <li><strong>Tn. Nandang:</strong> Penghasilan DN Rp 2.000.000.000 · Penghasilan LN dari Negara X Rp 200.000.000 (PPh LN Rp 40.000.000)</li>
-              <li><strong>Ny. Nanda (istri):</strong> Penghasilan DN Rp 1.500.000.000 · Penghasilan LN dari Negara X Rp 300.000.000 (PPh LN Rp 60.000.000)</li>
-              <li>Tidak ada tanggungan (K/0) · Tidak ada P3B</li>
-            </ul>
+            <table class="tbl" style="margin-top:8px;">
+              <thead><tr><th>Asal Penghasilan</th><th class="amt">Ph Neto</th><th class="amt">Tarif</th><th class="amt">PPh LN</th></tr></thead>
+              <tbody>
+                <tr><td class="td-label">a. Laba dari negara X</td><td class="amt">Rp 1.000.000.000</td><td class="amt">40%</td><td class="amt">Rp 400.000.000</td></tr>
+                <tr><td class="td-label">b. Laba dari negara Y</td><td class="amt">Rp 2.000.000.000</td><td class="amt">20%</td><td class="amt">Rp 400.000.000</td></tr>
+                <tr class="row-subtotal"><td>Jumlah penghasilan luar negeri</td><td class="amt">Rp 3.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td>Penghasilan dalam negeri</td><td class="amt">Rp 2.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr class="row-total"><td>Total Ph Neto</td><td class="amt">Rp 5.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td><strong>PPh terutang</strong></td><td class="amt"><strong>Rp 1.110.000.000</strong></td><td class="amt"></td><td class="amt"></td></tr>
+              </tbody>
+            </table>
           `,
           extra: [
             {
-              type: 'reveal',
-              icon: '👫',
-              title: 'Skenario A: Kewajiban Perpajakan Dilaksanakan Suami (KK)',
-              body: `
-                <p>Penghasilan suami-istri <strong>digabungkan</strong>. PKP gabungan = (2M + 1,5M + 200jt + 300jt) − PTKP (K/0) = Rp 4.000.000.000 − Rp 112.500.000 = <strong>Rp 3.887.500.000</strong>. PPh Terutang = <strong>Rp 1.110.250.000</strong>.</p>
-                <p>PPh LN gabungan = Rp 100.000.000 · Jumlah Tertentu = (500jt / 3.887.500.000) × 1.110.250.000 = Rp 142.797.428 · Maka <strong>PPh 24 = Rp 100.000.000</strong> (nilai terkecil).</p>
-              `
-            },
+              type: 'calc',
+              steps: [
+                { label: 'Untuk Negara X', html: '(1.000.000.000 / 5.000.000.000) × 1.110.000.000 = <strong>Rp 222.000.000</strong><br>Walaupun pajak yang telah dipotong di negara X = Rp 400.000.000<br>→ Kredit = <strong>Rp 222.000.000</strong>', variant: 'p24' },
+                { label: 'Untuk Negara Y', html: '(2.000.000.000 / 5.000.000.000) × 1.110.000.000 = <strong>Rp 444.000.000</strong><br>Karena pajak yang dipotong di negara Y hanya Rp 400.000.000<br>→ Kredit = <strong>Rp 400.000.000</strong>', variant: 'p24' }
+              ],
+              final: 'Jumlah kredit pajak luar negeri yang diperkenankan = Rp 222.000.000 + Rp 400.000.000 = Rp 622.000.000'
+            }
+          ]
+        },
+
+        /* --- Contoh 6: PT F Malang --- */
+        {
+          type: 'card',
+          variant: 'card-p24',
+          icon: '🏭',
+          title: 'Contoh 6: PT F Malang — Penghasilan Final Dikeluarkan dari PKP',
+          html: `
+            <table class="tbl" style="margin-top:8px;">
+              <thead><tr><th>Asal Penghasilan</th><th class="amt">Ph Neto</th><th class="amt">Tarif</th><th class="amt">PPh LN</th></tr></thead>
+              <tbody>
+                <tr><td class="td-label">a. Laba dari negara X</td><td class="amt">Rp 2.000.000.000</td><td class="amt">30%</td><td class="amt">Rp 600.000.000</td></tr>
+                <tr><td class="td-label">b. Penghasilan dalam negeri — tidak final</td><td class="amt">Rp 3.000.000.000</td><td class="amt">—</td><td class="amt">—</td></tr>
+                <tr><td class="td-label">c. Penghasilan dalam negeri — <em>final</em></td><td class="amt">Rp 500.000.000</td><td class="amt">—</td><td class="amt">—</td></tr>
+                <tr class="row-subtotal"><td>Total Ph Neto tidak final</td><td class="amt">Rp 5.000.000.000</td><td class="amt"></td><td class="amt"></td></tr>
+                <tr><td><strong>PPh terutang</strong></td><td class="amt"><strong>Rp 1.110.000.000</strong></td><td class="amt"></td><td class="amt"></td></tr>
+              </tbody>
+            </table>
+          `,
+          extra: [
             {
-              type: 'reveal',
-              icon: '📋',
-              title: 'Skenario B: Pisah Harta (Memilih Kewajiban Sendiri)',
-              body: `
-                <p>PPh terutang gabungan dialokasikan proporsional:</p>
-                <ul>
-                  <li><strong>Tn. Nandang:</strong> (2.200.000.000 / 4.000.000.000) × 1.110.250.000 = <strong>Rp 610.637.500</strong></li>
-                  <li><strong>Ny. Nanda:</strong> (1.800.000.000 / 4.000.000.000) × 1.110.250.000 = <strong>Rp 499.612.500</strong></li>
-                </ul>
-                <p><strong>PPh 24 Tn. Nandang:</strong> PPh LN = Rp 40.000.000 · Jumlah Tertentu = (200jt / 3.887.500.000) × 1.110.250.000 = Rp 57.118.971 · Kredit = <strong>Rp 40.000.000</strong>.</p>
-                <p><strong>PPh 24 Ny. Nanda:</strong> PPh LN = Rp 60.000.000 · Jumlah Tertentu = (300jt / 3.887.500.000) × 1.110.250.000 = Rp 85.678.457 · Kredit = <strong>Rp 60.000.000</strong>.</p>
-              `
+              type: 'calc',
+              steps: [
+                { label: 'Untuk Negara X', html: '(2.000.000.000 / 5.000.000.000) × 1.110.000.000 = <strong>Rp 440.000.000</strong>', variant: 'p24' }
+              ],
+              final: 'Jumlah kredit pajak luar negeri yang diperkenankan = Rp 440.000.000'
             },
             {
               type: 'callout',
-              variant: 'p24',
-              icon: '📌',
-              title: 'Catatan',
-              html: 'Untuk perhitungan pisah harta, PKP yang digunakan sebagai pembagi dalam menghitung Jumlah Tertentu adalah <strong>PKP gabungan</strong> (Rp 3.887.500.000) — bukan PKP masing-masing.'
+              variant: 'warn',
+              icon: '⚠️',
+              title: 'Perhatikan',
+              html: 'Penghasilan dalam negeri yang dikenai <strong>PPh Final</strong> (Rp 500.000.000) <strong>TIDAK DIMASUKKAN</strong> dalam PKP untuk perhitungan PPh 24. PKP = Rp 5.000.000.000 (bukan Rp 5.500.000.000).'
             }
           ]
         },
@@ -629,42 +519,56 @@ window.TaxQuestContent = {
           id: 'q24-1',
           badge: 'Kuis PPh 24',
           xp: 10,
-          q: 'Apa tujuan utama PPh Pasal 24?',
+          q: 'Kapan penghasilan dari luar negeri berupa <em>usaha</em> digabungkan dengan penghasilan dalam negeri?',
           options: [
-            { text: 'Meringankan beban pajak akhir tahun', correct: false },
-            { text: 'Menghindari pemajakan berganda atas penghasilan dari luar negeri', correct: true },
-            { text: 'Mengatur angsuran pajak bulanan', correct: false },
-            { text: 'Membatasi penghasilan dari luar negeri', correct: false }
+            { text: 'Tahun pajak diterimanya penghasilan', correct: false },
+            { text: 'Tahun pajak diperolehnya penghasilan usaha', correct: true },
+            { text: 'Tahun pajak berikutnya setelah diterima', correct: false },
+            { text: 'Saat SPT disampaikan', correct: false }
           ],
-          explanation: 'PPh Pasal 24 bertujuan menghindari pemajakan berganda (double taxation) atas penghasilan yang sama — yang sudah dipajaki di negara sumber dan berpotensi dipajaki lagi di Indonesia.'
+          explanation: 'Untuk penghasilan dari usaha, penggabungan dilakukan dalam tahun pajak diperolehnya penghasilan usaha tersebut. Sedangkan penghasilan lainnya digabungkan pada tahun pajak diterimanya.'
         },
         {
           type: 'quiz',
           id: 'q24-2',
           badge: 'Kuis PPh 24',
           xp: 10,
-          q: 'Jika PPh Luar Negeri Rp 300 juta, Jumlah Tertentu Rp 220 juta, dan PPh Terutang Rp 660 juta — berapa PPh 24 yang dapat dikreditkan?',
+          q: 'Jika PPh Luar Negeri Rp 400 juta dan Jumlah Tertentu Rp 220 juta, berapa PPh 24 yang dapat dikreditkan?',
           options: [
-            { text: 'Rp 300.000.000', correct: false },
+            { text: 'Rp 400.000.000', correct: false },
             { text: 'Rp 220.000.000', correct: true },
-            { text: 'Rp 660.000.000', correct: false },
-            { text: 'Rp 80.000.000', correct: false }
+            { text: 'Rp 180.000.000', correct: false },
+            { text: 'Rp 620.000.000', correct: false }
           ],
-          explanation: 'PPh 24 = nilai terkecil dari tiga komponen. Di sini, Rp 220.000.000 (Jumlah Tertentu) lebih kecil dari Rp 300.000.000 (PPh LN), sehingga kredit yang diambil adalah Rp 220.000.000.'
+          explanation: 'Kredit pajak tidak boleh melebihi Jumlah Tertentu. Jika PPh LN > Jumlah Tertentu, kredit dibatasi sebesar Jumlah Tertentu (Rp 220.000.000).'
         },
         {
           type: 'quiz',
           id: 'q24-3',
           badge: 'Kuis PPh 24',
           xp: 10,
-          q: 'Bagaimana perlakuan kerugian dari luar negeri dalam perhitungan PPh 24?',
+          q: 'Apa yang terjadi jika PPh Luar Negeri melebihi jumlah kredit yang diperkenankan?',
           options: [
-            { text: 'Selalu bisa digabungkan dengan penghasilan DN', correct: false },
-            { text: 'Tidak boleh digabung, kecuali memiliki hubungan efektif dengan cabang/BUT', correct: true },
-            { text: 'Hanya bisa digabung jika ada P3B', correct: false },
-            { text: 'Selalu diabaikan sepenuhnya', correct: false }
+            { text: 'Kelebihan dapat direstitusi ke negara', correct: false },
+            { text: 'Kelebihan dapat dibiayakan sebagai pengurang penghasilan', correct: false },
+            { text: 'Kelebihan tidak dapat diperhitungkan tahun berikutnya, tidak dibiayakan, dan tidak direstitusi', correct: true },
+            { text: 'Kelebihan otomatis menjadi kredit pajak tahun berikutnya', correct: false }
           ],
-          explanation: 'Kerugian luar negeri tidak boleh digabungkan dengan penghasilan Indonesia. Pengecualian: jika kerugian tersebut berasal dari harta/kegiatan yang memiliki hubungan efektif dengan cabang/perwakilan di luar negeri.'
+          explanation: 'Kelebihan kredit PPh LN tidak dapat diperhitungkan dengan PPh terutang tahun berikutnya, tidak boleh dibebankan sebagai biaya/pengurang penghasilan, dan tidak dapat dimintakan restitusi.'
+        },
+        {
+          type: 'quiz',
+          id: 'q24-4',
+          badge: 'Kuis PPh 24',
+          xp: 10,
+          q: 'Dalam menghitung PKP untuk PPh 24, penghasilan yang dikenai PPh Final…',
+          options: [
+            { text: 'Tetap dimasukkan dalam PKP', correct: false },
+            { text: 'Tidak dimasukkan dalam PKP', correct: true },
+            { text: 'Dimasukkan sebagian', correct: false },
+            { text: 'Dikenai tarif berbeda', correct: false }
+          ],
+          explanation: 'PKP untuk perhitungan PPh 24 tidak termasuk penghasilan yang dikenai PPh bersifat final dan/atau penghasilan yang dikenai pajak tersendiri.'
         },
 
         {
@@ -684,7 +588,7 @@ window.TaxQuestContent = {
       head: {
         kicker: 'Misi 3 · PPh Pasal 25',
         title: 'Angsuran Pajak Tahun Berjalan',
-        desc: 'Mekanisme pembayaran pajak secara bertahap setiap bulan untuk meringankan beban pajak akhir tahun pajak.'
+        desc: 'Angsuran Pajak Penghasilan dalam Tahun Pajak berjalan untuk suatu bulan yang harus dibayar sendiri oleh Wajib Pajak — meringankan beban pajak akhir tahun.'
       },
       blocks: [
 
@@ -697,7 +601,7 @@ window.TaxQuestContent = {
           html: `
             <div class="callout p25" style="margin-top:0;">
               <div class="callout-title">📖 DEFINISI PPh PASAL 25</div>
-              "Angsuran Pajak Penghasilan dalam Tahun Pajak berjalan untuk suatu bulan yang harus dibayar sendiri oleh Wajib Pajak sebagaimana dimaksud dalam Pasal 25 UU PPh."
+              Angsuran Pajak Penghasilan dalam Tahun Pajak berjalan untuk suatu bulan yang harus dibayar sendiri oleh Wajib Pajak.
             </div>
             <p><strong>Dasar Hukum:</strong></p>
             <ul>
@@ -707,65 +611,7 @@ window.TaxQuestContent = {
               <li>Keputusan Dirjen Pajak Nomor KEP-537/PJ./2000</li>
               <li>Surat Edaran Dirjen Pajak Nomor SE-48/PJ.42/1999</li>
             </ul>
-            <p><strong>Tujuan:</strong> Meringankan beban pajak akhir tahun dengan cara pembayaran bertahap setiap bulan selama tahun pajak berjalan.</p>
-          `
-        },
-
-        /* --- Siapa yang Wajib --- */
-        {
-          type: 'card',
-          variant: '',
-          icon: '👥',
-          title: 'Siapa yang Wajib &amp; Dikecualikan?',
-          html: '<p>Bukan semua Wajib Pajak berkewajiban menyetor PPh 25. Berikut perbedaannya:</p>',
-          extra: [
-            {
-              type: 'two-col',
-              left: {
-                variant: 'p24',
-                title: '✅ WAJIB MENYETOR',
-                html: `
-                  <p>Orang pribadi dalam negeri yang menerima atau memperoleh penghasilan di atas PTKP sehubungan dengan pekerjaan dari badan-badan yang <strong>tidak wajib melakukan pemotongan pajak</strong> sebagaimana dimaksud dalam Pasal 21 ayat (2) UU PPh.</p>
-                `
-              },
-              right: {
-                variant: 'p25',
-                title: '❌ DIKECUALIKAN',
-                html: `
-                  <ul>
-                    <li>Wajib Pajak yang hanya memperoleh penghasilan yang telah dikenakan <strong>PPh final</strong> berdasarkan ketentuan tersendiri</li>
-                    <li>Wajib Pajak orang pribadi yang dalam satu Tahun Pajak menerima atau memperoleh penghasilan neto <strong>tidak melebihi PTKP</strong></li>
-                    <li>Wajib Pajak orang pribadi yang <strong>tidak menjalankan kegiatan usaha</strong> atau tidak melakukan pekerjaan bebas</li>
-                  </ul>
-                `
-              }
-            }
-          ]
-        },
-
-        /* --- Formula Dasar --- */
-        {
-          type: 'card',
-          variant: 'card-p25',
-          icon: '🧮',
-          title: 'Formula Dasar PPh 25',
-          html: `
-            <div class="callout p25" style="text-align:center;font-size:17px;font-family:'JetBrains Mono',monospace;padding:22px;margin-top:0;">
-              <div style="font-weight:800;">PPh 25 = <sup>1</sup>&frasl;<sub>12</sub> × PPh yang harus dibayar sendiri</div>
-            </div>
-            <p style="margin-top:16px;"><strong>Breakdown "PPh yang harus dibayar sendiri":</strong></p>
-            <div class="callout gold">
-              <div style="font-family:'JetBrains Mono',monospace;font-size:13.5px;">
-                PPh yang harus dibayar sendiri = <strong>PPh Terutang</strong> − <strong>Kredit Pajak</strong>
-              </div>
-              <ul style="margin-top:8px;">
-                <li>PPh Pasal 22 (dipotong/dipungut pihak lain)</li>
-                <li>PPh Pasal 23 (dipotong/dipungut pihak lain)</li>
-                <li>PPh Pasal 24 (kredit pajak luar negeri)</li>
-                <li>PPh Pasal 25 (angsuran yang sudah dibayar sendiri)</li>
-              </ul>
-            </div>
-            <p><strong>Catatan:</strong> Jika SPT disampaikan tepat waktu, PPh 25 = 1/12 × PPh yang harus dibayar sendiri berdasarkan SPT tahun lalu. Jika ada perubahan kondisi, perhitungan disesuaikan.</p>
+            <p><strong>Tujuan:</strong> Meringankan beban pajak akhir tahun dengan pembayaran bertahap setiap bulan sepanjang tahun berjalan.</p>
           `
         },
 
@@ -774,34 +620,50 @@ window.TaxQuestContent = {
           type: 'card',
           variant: '',
           icon: '🗺️',
-          title: 'Overview Skenario Penentuan PPh 25',
-          html: '<p>Penentuan besarnya PPh 25 bervariasi tergantung kondisi Wajib Pajak:</p>',
+          title: 'Overview: Enam Skenario Perhitungan PPh 25',
+          html: '<p>Perhitungan PPh 25 bervariasi tergantung kondisi Wajib Pajak:</p>',
           extra: [
             {
               type: 'grid-cards',
               cols: 3,
               items: [
-                { variant: 'p24', icon: '①', title: 'UMUM', html: 'PPh 25 = 1/12 × PPh yang harus dibayar sendiri berdasarkan SPT tahun sebelumnya.' },
-                { variant: 'gold', icon: '②', title: 'SEBELUM SPT DISAMPAIKAN', html: 'Sama dengan PPh 25 bulan terakhir tahun sebelumnya (bersifat sementara).' },
-                { variant: 'p25', icon: '③', title: '6 SKENARIO KHUSUS', html: 'a. Kompensasi kerugian<br>b. Penghasilan tidak teratur<br>c. SPT terlambat<br>d. Perpanjangan SPT<br>e. Pembetulan SPT<br>f. Perubahan keadaan usaha' }
+                { variant: 'p25', icon: '01', title: 'Perhitungan Umum', html: 'Berdasarkan PPh terutang dalam SPT Tahunan tahun pajak yang lalu dikurangi kredit pajak, dibagi 12.' },
+                { variant: 'p25', icon: '02', title: 'Sebelum SPT Disampaikan', html: 'Sama dengan besarnya angsuran PPh 25 bulan terakhir tahun pajak yang lalu (bersifat sementara).' },
+                { variant: 'p25', icon: '03', title: 'WP Bank', html: 'Berdasarkan laporan keuangan bulanan yang disampaikan ke OJK.' },
+                { variant: 'p25', icon: '04', title: 'WP Lainnya &amp; Masuk Bursa', html: 'Berdasarkan laporan keuangan per 3 bulan yang disampaikan ke bursa/OJK.' },
+                { variant: 'p25', icon: '05', title: 'WP BUMN / BUMD', html: 'Berdasarkan RKAP yang telah disahkan RUPS.' },
+                { variant: 'p25', icon: '06', title: 'WP Baru / OPPT / Khusus', html: 'WP Baru NIHIL, OPPT 0,75% × peredaran bruto, serta WP dengan kompensasi kerugian dan perubahan usaha.' }
               ]
-            },
-            {
-              type: 'card',
-              variant: 'card-p25',
-              icon: '🏢',
-              title: 'WP dengan Karakteristik Khusus',
-              html: `
-                <div class="grid grid-3" style="gap:10px;">
-                  <div style="padding:12px;background:var(--surface);border-radius:8px;text-align:center;font-size:13px;font-weight:700;border:1px solid var(--p25-border);">🏦 WP Bank</div>
-                  <div style="padding:12px;background:var(--surface);border-radius:8px;text-align:center;font-size:13px;font-weight:700;border:1px solid var(--p25-border);">📈 WP Lainnya &amp; Bursa</div>
-                  <div style="padding:12px;background:var(--surface);border-radius:8px;text-align:center;font-size:13px;font-weight:700;border:1px solid var(--p25-border);">🏛️ WP BUMN / BUMD</div>
-                  <div style="padding:12px;background:var(--surface);border-radius:8px;text-align:center;font-size:13px;font-weight:700;border:1px solid var(--p25-border);">🆕 WP Baru</div>
-                  <div style="padding:12px;background:var(--surface);border-radius:8px;text-align:center;font-size:13px;font-weight:700;border:1px solid var(--p25-border);grid-column:span 2;">🛒 WP OPPT (0,75% × peredaran bruto)</div>
-                </div>
-              `
             }
           ]
+        },
+
+        /* --- Perhitungan Umum --- */
+        {
+          type: 'card',
+          variant: 'card-p25',
+          icon: '🧮',
+          title: 'Perhitungan Secara Umum',
+          html: `
+            <div class="callout p25" style="margin-top:0;">
+              <div class="callout-title">📐 Dasar Perhitungan</div>
+              <strong>PPh Terutang</strong> dalam SPT Tahunan PPh Tahun Pajak yang lalu.
+            </div>
+            <div class="callout gold">
+              <div class="callout-title">➖ Kredit Pajak (Pengurang)</div>
+              PPh yang telah dipotong/dipungut (bersifat tidak final) dalam SPT Tahunan PPh Tahun Pajak yang lalu, yaitu:
+              <ul style="margin-top:6px;">
+                <li>PPh Pasal 21</li>
+                <li>PPh Pasal 22</li>
+                <li>PPh Pasal 23</li>
+                <li>PPh Pasal 24</li>
+              </ul>
+            </div>
+            <div class="callout p25" style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:15px;padding:18px;">
+              <strong>PPh 25 = (PPh Terutang − Kredit Pajak) ÷ 12</strong>
+              <div style="font-size:12px;margin-top:6px;font-style:italic;">atau dibagi banyaknya bulan dalam tahun berjalan</div>
+            </div>
+          `
         },
 
         /* --- Contoh Umum --- */
@@ -809,178 +671,86 @@ window.TaxQuestContent = {
           type: 'card',
           variant: 'card-p25',
           icon: '📊',
-          title: 'Contoh: Perhitungan Umum (PT A)',
-          html: '<p><strong>Data PT A (Tahun 2022):</strong> Ph Neto Fiskal Rp 81.354.657 · PPh dipotong/dipungut Rp 0 · PPh 25 sudah dibayar Rp 0</p>',
+          title: 'Contoh: Perhitungan Umum (WP Badan)',
+          html: `
+            <p><strong>PPh terutang berdasarkan SPT Tahunan PPh WP Badan Tahun 2022:</strong></p>
+            <table class="tbl" style="margin-top:10px;">
+              <tbody>
+                <tr class="row-subtotal"><td class="td-label">PPh terutang (SPT Tahunan 2022)</td><td class="amt">Rp 50.000.000</td></tr>
+                <tr><td>Dikurangi — PPh Pasal 22</td><td class="amt">(Rp 10.000.000)</td></tr>
+                <tr><td>Dikurangi — PPh Pasal 23</td><td class="amt">(Rp 2.500.000)</td></tr>
+                <tr><td>Dikurangi — Kredit Pajak Luar Negeri (Pasal 24)</td><td class="amt">(Rp 7.500.000)</td></tr>
+                <tr class="row-subtotal"><td><strong>Jumlah kredit pajak</strong></td><td class="amt"><strong>(Rp 20.000.000)</strong></td></tr>
+                <tr class="row-total"><td><strong>Selisih (PPh yang harus dibayar sendiri)</strong></td><td class="amt"><strong>Rp 30.000.000</strong></td></tr>
+              </tbody>
+            </table>
+          `,
           extra: [
             {
               type: 'calc',
               steps: [
-                { label: 'Langkah 1 — Hitung PPh Terutang', html: 'Ph KP fasilitas UMKM: (4,8M / 13,18M) × 81.354.657 ≈ Rp 29.626.206<br>PPh fasilitas = 50% × 22% × 29.626.206 = <strong>Rp 3.258.860</strong><br><br>Ph KP non-fasilitas = 81.354.657 − 29.626.206 = Rp 51.728.451<br>PPh non-fasilitas = 22% × 51.728.451 = <strong>Rp 11.380.259</strong><br><br>Total PPh Terutang = <strong>Rp 14.639.119</strong>', variant: 'p25' },
-                { label: 'Langkah 2 — Hitung PPh 25', html: 'PPh yang harus dibayar sendiri = 14.639.119 − 0 = Rp 14.639.119<br><strong>PPh 25 = 1/12 × 14.639.119 = Rp 1.219.927/bulan</strong><br><br><em>Jika usaha baru berjalan 10 bulan (mulai Maret):</em><br>PPh 25 = 1/10 × 14.639.119 = <strong>Rp 1.463.912/bulan</strong>', variant: 'p25' }
+                { label: 'Angsuran PPh 25 setiap bulan untuk tahun 2023', html: 'Rp 30.000.000 ÷ 12 = <strong>Rp 2.500.000/bulan</strong>', variant: 'p25' }
               ]
             }
           ]
         },
 
-        /* --- SIMULATOR PPh 25 --- */
-        {
-          type: 'simulator',
-          id: 'sim-p25',
-          variant: 'sim-p25',
-          icon: '🧪',
-          title: 'Simulator PPh 25',
-          sub: 'Masukkan angka, lihat perhitungan angsuran bulanan secara real-time',
-          mode: 'p25-basic',
-          fields: [
-            { key: 'pph',  label: 'PPh Terutang',    type: 'number', default: 240000000, step: 1000000 },
-            { key: 'k22',  label: 'Kredit PPh 22',   type: 'number', default: 20000000,  step: 1000000 },
-            { key: 'k23',  label: 'Kredit PPh 23',   type: 'number', default: 0,         step: 1000000 },
-            { key: 'k24',  label: 'Kredit PPh 24',   type: 'number', default: 0,         step: 1000000 }
-          ]
-        },
-
-        /* --- Skenario 3a: Kompensasi Kerugian --- */
+        /* --- Contoh 2: WP dengan kerugian dalam negeri --- */
         {
           type: 'card',
           variant: 'card-p25',
           icon: '📉',
-          title: 'Skenario 3a: Kompensasi Kerugian (PT PQR)',
+          title: 'Contoh: Perhitungan dengan Data Lengkap',
           html: `
-            <p><strong>Data:</strong></p>
-            <ul>
-              <li>Ph neto (fiskal) tahun 2023: <strong>Rp 116.800.000</strong></li>
-              <li>Sisa kerugian tahun 2019 yang belum dikompensasikan: <strong>Rp 166.800.000</strong></li>
-              <li>Ph neto tahun 2024: <strong>Rp 115.840.000</strong></li>
-            </ul>
+            <table class="tbl" style="margin-top:8px;">
+              <tbody>
+                <tr><td class="td-label">Penghasilan neto fiskal Tahun 2022</td><td class="amt">Rp 570.000.000</td></tr>
+                <tr><td>PPh terutang (22% × 570.000.000)</td><td class="amt">Rp 125.400.000</td></tr>
+                <tr><td>PPh yang telah dipotong/dipungut (kredit pajak) — PPh Ps. 22</td><td class="amt">Rp 150.750.000</td></tr>
+                <tr class="row-subtotal"><td><strong>PPh yang harus dibayar sendiri</strong></td><td class="amt"><strong>(Rp 25.350.000)</strong></td></tr>
+                <tr><td>PPh yang dibayar sendiri — PPh Ps. 25 Jan–Des 2022</td><td class="amt">Rp 12.000.000</td></tr>
+                <tr class="row-total"><td><strong>PPh yang lebih dibayar</strong></td><td class="amt"><strong>(Rp 37.350.000)</strong></td></tr>
+              </tbody>
+            </table>
           `,
           extra: [
             {
-              type: 'calc',
-              steps: [
-                { label: 'Perhitungan Tahun 2023', html: 'Ph neto tahun 2023: Rp 116.800.000<br>Kompensasi kerugian 2019: (Rp 166.800.000)<br>Ph neto setelah kompensasi: <strong>(Rp 50.000.000)</strong><br>Karena masih rugi, <strong>PPh 25 tahun 2024 = NIHIL</strong>', variant: 'p25' },
-                { label: 'Perhitungan Tahun 2024', html: 'Ph neto tahun 2024: Rp 115.840.000<br>Sisa kerugian 2023 yang masih dapat dikompensasi: (Rp 50.000.000)<br>Ph neto setelah kompensasi (PhKP): <strong>Rp 65.840.000</strong><br><br>PPh Terutang = 22% × Rp 65.840.000 = <strong>Rp 14.484.800</strong><br>PPh 25 tahun 2024 = (1/12) × Rp 14.484.800 = <strong>Rp 1.207.067/bulan</strong>', variant: 'p25' }
-              ]
+              type: 'callout',
+              variant: 'warn',
+              icon: '⚠️',
+              title: 'Perhatikan',
+              html: 'Jika nilai PPh yang harus dibayar sendiri <strong>negatif</strong> (lebih bayar), maka angsuran PPh 25 tahun berikutnya menjadi <strong>NIHIL</strong> — WP tidak perlu membayar angsuran.'
             }
           ]
         },
 
-        /* --- Skenario 3b: Penghasilan Tidak Teratur --- */
-        {
-          type: 'card',
-          variant: 'card-p25',
-          icon: '📈',
-          title: 'Skenario 3b: Penghasilan Tidak Teratur (Tn. Santosa)',
-          html: `
-            <p><strong>Definisi penghasilan tidak teratur</strong> — tidak termasuk dalam penghasilan teratur:</p>
-            <ul>
-              <li>Keuntungan selisih kurs dari utang/piutang dalam mata uang asing</li>
-              <li>Keuntungan dari pengalihan harta (<em>capital gain</em>) sepanjang bukan penghasilan dari kegiatan usaha pokok</li>
-              <li>Penghasilan lainnya yang bersifat insidentil</li>
-            </ul>
-            <p><strong>Data Tn. Santosa (K/3) tahun 2023:</strong></p>
-            <ul>
-              <li>Ph neto: Rp 471.550.923 (termasuk dividen Rp 40.000.000 yang tidak setiap tahun diterima)</li>
-              <li>Peredaran bruto usaha: Rp 12.544.204.860</li>
-              <li>PPh 22 dipungut: Rp 2.250.000</li>
-              <li>PPh 25 dibayar: Rp 38.752.224</li>
-            </ul>
-          `,
-          extra: [
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Langkah 1 — Hitung PKP', html: 'Ph neto teratur + tidak teratur: Rp 471.550.923<br>Ph neto tidak teratur: (Rp 40.000.000)<br>Ph neto teratur: <strong>Rp 431.550.923</strong><br>PTKP (K/3): (Rp 72.000.000)<br>PhKP: <strong>Rp 359.550.923</strong>', variant: 'p25' },
-                { label: 'Langkah 2 — Hitung PPh Terutang &amp; PPh 25', html: 'PPh Terutang:<br>5% × 60.000.000 = Rp 3.000.000<br>15% × 190.000.000 = Rp 28.500.000<br>25% × 49.550.000 = Rp 12.387.500<br>Jumlah: <strong>Rp 43.887.500</strong><br><br>PPh yang harus dibayar sendiri = 43.887.500 − 2.250.000 = <strong>Rp 41.637.500</strong><br>PPh 25 = (1/12) × 41.637.500 = <strong>Rp 3.469.792/bulan</strong>', variant: 'p25' }
-              ]
-            }
-          ]
-        },
-
-        /* --- Skenario 3c/d/e: Penyesuaian SPT --- */
+        /* --- Angsuran Sebelum SPT --- */
         {
           type: 'card',
           variant: 'card-gold',
           icon: '⏱️',
-          title: 'Skenario 3c/d/e: Penyesuaian Akibat SPT',
+          title: 'Angsuran Sebelum SPT Tahunan Disampaikan',
           html: `
             <div class="callout gold" style="margin-top:0;">
-              <div class="callout-title">🔑 Prinsip Universal</div>
-              Saat SPT belum disampaikan → PPh 25 bersifat <strong>sementara</strong> (mengacu SPT tahun sebelumnya). Setelah SPT disampaikan → PPh 25 <strong>disesuaikan dan berlaku surut</strong> mulai batas waktu penyampaian SPT. Selisih kekurangan harus dibayar + sanksi administrasi.
+              <div class="callout-title">🔑 Prinsip</div>
+              Besarnya angsuran PPh 25 untuk bulan-bulan <strong>sebelum SPT Tahunan disampaikan</strong> adalah <strong>sama dengan</strong> besarnya angsuran pajak untuk <strong>bulan terakhir tahun pajak yang lalu</strong>.
             </div>
           `,
           extra: [
             {
-              type: 'reveal',
-              icon: '📅',
-              title: 'Skenario 3c: SPT Terlambat',
-              body: `
-                <p><strong>Contoh:</strong> PPh 25 Desember 2023 = Rp 1.000.000. SPT Tahunan 2023 disampaikan Juli 2024 (seharusnya paling lambat April 2024). PPh 25 berdasarkan SPT = Rp 1.300.000.</p>
-                <p><strong>Perhitungan:</strong></p>
-                <ul>
-                  <li>Masa Jan–Jun 2024: PPh 25 = Rp 1.000.000 (sementara)</li>
-                  <li>Setelah SPT disampaikan (Juli): PPh 25 seharusnya Rp 1.300.000</li>
-                  <li>Kekurangan Jan–Jun = 6 × (1.300.000 − 1.000.000) = <strong>Rp 1.800.000</strong> + sanksi administrasi</li>
-                </ul>
-              `
-            },
-            {
-              type: 'reveal',
-              icon: '⏳',
-              title: 'Skenario 3d: Perpanjangan Waktu SPT',
-              body: `
-                <p><strong>Contoh:</strong> PPh 25 Jan–Mar 2023 = Rp 1.200.000. PPh 25 Apr 2023 (berdasarkan SPT sementara) = Rp 1.500.000. SPT Tahunan 2022 perpanjangan disampaikan akhir Juni 2023, dengan perhitungan PPh 25 = Rp 2.000.000.</p>
-                <p><strong>Perhitungan:</strong></p>
-                <ul>
-                  <li>Jan–Mar 2023: Rp 1.200.000 (tidak berubah)</li>
-                  <li>Apr 2023: Rp 1.500.000 (sementara)</li>
-                  <li>Setelah SPT disampaikan: PPh 25 seharusnya mulai Apr 2023 = Rp 2.000.000</li>
-                  <li>Kekurangan Apr–Jun = 3 × (2.000.000 − 1.500.000) = <strong>Rp 1.500.000</strong> + sanksi administrasi</li>
-                  <li>Mulai Juli 2023: Rp 2.000.000</li>
-                </ul>
-              `
-            },
-            {
-              type: 'reveal',
-              icon: '✏️',
-              title: 'Skenario 3e: Pembetulan SPT',
-              body: `
-                <p><strong>Contoh:</strong> PPh 25 April 2024 (berdasarkan SPT 2023) = Rp 2.500.000. Agustus 2024, WP membetulkan SPT 2023 dengan perhitungan PPh 25 = Rp 3.000.000.</p>
-                <p><strong>Perhitungan:</strong></p>
-                <ul>
-                  <li>Selisih = Rp 500.000/bulan</li>
-                  <li>Berlaku surut mulai April 2024</li>
-                  <li>Kekurangan Apr–Jul (4 bulan) = 4 × Rp 500.000 = <strong>Rp 2.000.000</strong></li>
-                  <li>Mulai Agustus 2024: Rp 3.000.000</li>
-                </ul>
-              `
-            }
-          ]
-        },
-
-        /* --- Skenario 3f: Perubahan Usaha --- */
-        {
-          type: 'card',
-          variant: 'card-p25',
-          icon: '📊',
-          title: 'Skenario 3f: Perubahan Keadaan Usaha (Tn. Raden)',
-          html: `
-            <p><strong>Syarat:</strong></p>
-            <ul>
-              <li>Setelah 3 bulan atau lebih berjalannya tahun pajak, WP dapat menunjukkan bahwa PPh terutang akan <strong>kurang dari 75%</strong> dari PPh terutang yang menjadi dasar perhitungan PPh 25 → dapat mengajukan permohonan pengurangan</li>
-              <li>Jika usaha meningkat dan PPh terutang diperkirakan <strong>lebih dari 150%</strong> → PPh 25 harus dihitung kembali</li>
-            </ul>
-            <p><strong>Contoh Tn. Raden (K/1), jasa Konsultan Hukum:</strong></p>
-            <ul>
-              <li>SPT 2022: Ph neto fiskal Rp 263.000.000 · PTKP (K/1) Rp 63.000.000 · PhKP Rp 200.000.000 · PPh Terutang Rp 24.000.000 · PPh 25 = Rp 1.775.000</li>
-              <li>Estimasi 2023: Ph neto turun menjadi Rp 163.000.000</li>
-            </ul>
-          `,
-          extra: [
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Perhitungan ulang 2023', html: 'Ph neto fiskal: Rp 163.000.000<br>PTKP (K/1): (Rp 63.000.000)<br>Ph KP: <strong>Rp 100.000.000</strong><br><br>PPh Terutang:<br>5% × 60.000.000 = Rp 3.000.000<br>15% × 40.000.000 = Rp 6.000.000<br>Jumlah: <strong>Rp 9.000.000</strong><br><br>PPh 25 Jan–Mei 2023 = Rp 7.900.000<br>PPh yang masih harus dibayar 7 bulan = Rp 1.100.000<br>PPh 25 per bulan = (1/7) × 1.100.000 = <strong>Rp 157.143</strong>', variant: 'p25' }
+              type: 'table',
+              headers: ['WP', 'SPT Disampaikan', 'Masa Berlaku Angsuran Sementara', 'Masa Berlaku Angsuran Baru'],
+              rows: [
+                { cells: ['<strong>WP Badan</strong>', 'April 2023', 'Jan, Feb, Mar 2023', 'April 2023 s/d Des 2023'], variant: ['td-label','','',''] },
+                { cells: ['<strong>WP Orang Pribadi</strong>', 'Maret 2023', 'Jan, Feb 2023', 'Maret 2023 s/d Des 2023'], variant: ['td-label','','',''] }
               ]
+            },
+            {
+              type: 'callout',
+              variant: 'p25',
+              icon: '📌',
+              title: 'Contoh',
+              html: 'Angsuran PPh 25 setiap bulan untuk tahun 2022 = Rp 2.500.000 (Rp 30.000.000 ÷ 12). Jika SPT Tahunan 2022 disampaikan <strong>Maret 2023</strong>, angsuran tersebut berlaku untuk masa Maret 2023. Angsuran untuk masa <strong>Januari dan Februari 2023</strong> masing-masing sama dengan angsuran PPh 25 bulan <strong>Desember 2022</strong>.'
             }
           ]
         },
@@ -992,32 +762,32 @@ window.TaxQuestContent = {
           icon: '🏦',
           title: 'WP Bank: Perhitungan Berdasarkan Laporan Keuangan',
           html: `
-            <p><strong>Formula:</strong></p>
+            <p><strong>Dasar Perhitungan:</strong> Laporan keuangan yang disampaikan kepada <strong>Otoritas Jasa Keuangan (OJK)</strong>, terdiri dari:</p>
+            <ul>
+              <li>Laporan <strong>posisi keuangan</strong></li>
+              <li>Laporan <strong>laba rugi</strong> sejak awal Tahun Pajak sampai dengan Masa Pajak yang dilaporkan</li>
+            </ul>
             <div class="callout p25" style="font-family:'JetBrains Mono',monospace;font-size:13px;">
               PPh 25 = (Tarif Pasal 17 × Penghasilan Neto)<br>
-              − PPh 22 (sejak awal tahun s/d masa pajak dilaporkan)<br>
-              − PPh 25 yang seharusnya dibayar (sejak awal tahun s/d masa pajak sebelumnya)
+              − PPh Ps. 22 (sejak awal tahun s/d masa pajak dilaporkan)<br>
+              − PPh Ps. 25 (sejak awal tahun s/d masa pajak sebelum yang dilaporkan)
             </div>
-            <p><strong>Data:</strong></p>
+            <p><strong>Penghasilan neto TIDAK termasuk:</strong></p>
+            <ul>
+              <li>Penghasilan dari luar negeri yang diterima/diperoleh WP</li>
+              <li>Penghasilan dan biaya sebagai pengurang yang dikenai <strong>PPh Final</strong> dan/atau <strong>bukan objek</strong> PPh</li>
+            </ul>
+            <p>Kerugian yang dapat dikompensasikan dikompensasi dengan penghasilan neto dalam negeri.</p>
           `,
           extra: [
             {
               type: 'table',
-              headers: ['Masa Pajak', 'Penghasilan Neto', 'PPh 22'],
+              headers: ['Masa Pajak', 'Penghasilan Neto', 'PPh Terutang 22%', 'PPh Ps. 22', 'PPh Ps. 25 s.d. masa dilaporkan', 'Angsuran yg masih harus dibayar'],
               rows: [
-                { cells: ['Januari',  'Rp 1.000.000.000', 'Rp 25.000.000'],  variant: ['td-label','amt','amt'] },
-                { cells: ['Februari', 'Rp 2.100.000.000', 'Rp 75.000.000'],  variant: ['td-label','amt','amt'] },
-                { cells: ['Maret',    'Rp 1.900.000.000', 'Rp 100.000.000'], variant: ['td-label','amt','amt'] },
-                { cells: ['April',    'Rp 4.600.000.000', 'Rp 250.000.000'], variant: ['td-label','amt','amt'] }
-              ]
-            },
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Januari', html: 'PPh Terutang 22%: Rp 250.000.000<br>− PPh 22: (Rp 25.000.000)<br>PPh 25 = <strong>Rp 225.000.000</strong>', variant: 'p25' },
-                { label: 'Februari', html: 'PPh Terutang 22%: Rp 462.000.000<br>− PPh 22: (Rp 75.000.000)<br>− PPh 25 Jan: (Rp 225.000.000)<br>PPh 25 = <strong>Rp 162.000.000</strong>', variant: 'p25' },
-                { label: 'Maret', html: 'PPh Terutang 22%: Rp 418.000.000<br>− PPh 22: (Rp 100.000.000)<br>− PPh 25 Jan–Feb: (Rp 387.000.000)<br>PPh 25 = <strong>Rp 0</strong> (lebih bayar karena penghasilan turun)', variant: 'p25' },
-                { label: 'April', html: 'PPh Terutang 22%: Rp 1.012.000.000<br>− PPh 22: (Rp 250.000.000)<br>− PPh 25 Jan–Mar: (Rp 387.000.000)<br>PPh 25 = <strong>Rp 375.000.000</strong>', variant: 'p25' }
+                { cells: ['Januari',  '1.000.000.000', '220.000.000', '25.000.000',  '—',            '195.000.000'], variant: ['td-label','amt','amt','amt','amt','amt'] },
+                { cells: ['Februari', '2.100.000.000', '462.000.000', '75.000.000',  '195.000.000',  '192.000.000'], variant: ['td-label','amt','amt','amt','amt','amt'] },
+                { cells: ['Maret',    '1.900.000.000', '418.000.000', '100.000.000', '387.000.000',  '0'],           variant: ['td-label','amt','amt','amt','amt','amt'] },
+                { cells: ['April',    '4.600.000.000', '1.012.000.000','250.000.000','387.000.000',  '375.000.000'], variant: ['td-label','amt','amt','amt','amt','amt'] }
               ]
             }
           ]
@@ -1028,95 +798,59 @@ window.TaxQuestContent = {
           type: 'card',
           variant: 'card-p25',
           icon: '📈',
-          title: 'WP Lainnya &amp; WP Masuk Bursa: Perhitungan Per 3 Bulan',
+          title: 'WP Lainnya &amp; WP Masuk Bursa (Selain Bank)',
           html: `
-            <p>Untuk WP Lainnya dan WP masuk bursa (selain WP Bank), dasar perhitungan adalah laporan keuangan yang disampaikan setiap <strong>3 (tiga) bulan</strong> kepada bursa dan/atau Otoritas Jasa Keuangan.</p>
+            <p><strong>Dasar Perhitungan:</strong> Laporan keuangan yang disampaikan setiap <strong>3 (tiga) bulan</strong> kepada bursa dan/atau OJK — terdiri dari laporan posisi keuangan dan laporan laba rugi sejak awal Tahun Pajak s/d periode yang dilaporkan.</p>
             <div class="callout p25" style="font-family:'JetBrains Mono',monospace;font-size:13px;">
-              PPh 25 = (Tarif × Penghasilan Neto) − PPh 22 &amp; 23 (sejak awal tahun s/d periode dilaporkan) − PPh 25 yang seharusnya dibayar
+              PPh 25 = (Tarif Pasal 17 × Penghasilan Neto)<br>
+              − PPh Ps. 22 dan PPh Ps. 23 (sejak awal tahun s/d masa pajak dilaporkan)<br>
+              − PPh Ps. 25 (sejak awal tahun s/d masa pajak sebelum yang dilaporkan)
             </div>
-            <p><strong>Data:</strong></p>
+            <p>Angsuran PPh 25 ini merupakan angsuran untuk <strong>3 (tiga) Masa Pajak setelah periode yang dilaporkan</strong>.</p>
+            <p>Dalam hal WP memiliki kerugian yang dapat dikompensasikan, kerugian tersebut dikompensasikan dengan penghasilan neto dalam negeri.</p>
           `,
           extra: [
             {
               type: 'table',
-              headers: ['Laporan', 'Penghasilan Neto', 'PPh 22 & 23'],
+              headers: ['Periode', 'Penghasilan Neto', 'PPh Terutang 22%', 'PPh Ps. 22 &amp; 23', 'PPh Ps. 25 s.d. sebelumnya', 'Angsuran 3 bln berikutnya'],
               rows: [
-                { cells: ['Jan–Mar', 'Rp 2.100.000.000', 'Rp 75.000.000'],  variant: ['td-label','amt','amt'] },
-                { cells: ['Apr–Jun', 'Rp 4.700.000.000', 'Rp 125.000.000'], variant: ['td-label','amt','amt'] },
-                { cells: ['Jul–Sep', 'Rp 3.200.000.000', 'Rp 200.000.000'], variant: ['td-label','amt','amt'] }
-              ]
-            },
-            {
-              type: 'calc',
-              steps: [
-                { label: 'Jan–Mar', html: 'PPh Terutang 22%: Rp 462.000.000<br>− PPh 22 &amp; 23: (Rp 75.000.000)<br>PPh 25 3 bulan = <strong>Rp 387.000.000</strong><br>PPh 25 per bulan = <strong>Rp 129.000.000</strong>', variant: 'p25' },
-                { label: 'Apr–Jun', html: 'PPh Terutang 22%: Rp 1.034.000.000<br>− PPh 22 &amp; 23: (Rp 125.000.000)<br>− PPh 25 Jan–Mar: (Rp 387.000.000)<br>PPh 25 3 bulan = <strong>Rp 522.000.000</strong><br>PPh 25 per bulan = <strong>Rp 174.000.000</strong>', variant: 'p25' },
-                { label: 'Jul–Sep', html: 'PPh Terutang 22%: Rp 704.000.000<br>− PPh 22 &amp; 23: (Rp 200.000.000)<br>− PPh 25 Jan–Jun: (Rp 909.000.000)<br>PPh 25 3 bulan = <strong>Rp 0</strong> (lebih bayar)', variant: 'p25' }
+                { cells: ['Jan–Mar', '2.100.000.000', '462.000.000', '75.000.000',  '—',           '129.000.000'], variant: ['td-label','amt','amt','amt','amt','amt'] },
+                { cells: ['Apr–Jun', '4.700.000.000', '1.034.000.000','125.000.000','387.000.000', '174.000.000'], variant: ['td-label','amt','amt','amt','amt','amt'] },
+                { cells: ['Jul–Sep', '3.200.000.000', '704.000.000', '200.000.000', '909.000.000', '0'],           variant: ['td-label','amt','amt','amt','amt','amt'] }
               ]
             }
           ]
         },
 
-        /* --- WP BUMN --- */
+        /* --- WP BUMN/BUMD --- */
         {
           type: 'card',
           variant: 'card-p25',
           icon: '🏛️',
-          title: 'WP BUMN/BUMD: Berdasarkan RKAP',
+          title: 'WP BUMN &amp; BUMD',
           html: `
-            <p>Wajib Pajak Badan Usaha Milik Negara dan Badan Usaha Milik Daerah (selain WP Bank, WP masuk bursa, dan WP Lainnya) dihitung berdasarkan Rencana Kerja dan Anggaran Pendapatan (RKAP) yang telah disahkan Rapat Umum Pemegang Saham (RUPS).</p>
+            <p><strong>Dasar Perhitungan:</strong> Penerapan tarif Pasal 17 UU PPh atas penghasilan neto berdasarkan <strong>Rencana Kerja dan Anggaran Pendapatan (RKAP)</strong> Tahun Pajak yang bersangkutan yang telah disahkan RUPS.</p>
             <div class="callout p25" style="font-family:'JetBrains Mono',monospace;font-size:13px;">
-              PPh 25 = (Tarif × Ph Neto RKAP − PPh 22 − PPh 23 − PPh 24) ÷ 12
+              PPh 25 = (Tarif × Ph Neto RKAP − PPh Ps. 22 − PPh Ps. 23 − PPh Ps. 24) ÷ 12
             </div>
+            <p><strong>Pengecualian:</strong> Ketentuan ini berlaku selain untuk WP Bank, WP Masuk Bursa, dan WP Lainnya.</p>
           `,
           extra: [
             {
               type: 'calc',
               steps: [
-                { label: 'Perhitungan', html: 'Ph neto fiskal 2023 menurut RKAP: Rp 12.000.000.000<br>PPh Terutang = 22% × 12.000.000.000 = <strong>Rp 2.640.000.000</strong><br><br>Dikurangi pemotongan/pemungutan PPh tahun 2022:<br>PPh 22: (Rp 300.000.000)<br>PPh 23: (Rp 0)<br>PPh 24: (Rp 0)<br><br>PPh yang harus dibayar sendiri = <strong>Rp 2.340.000.000</strong><br>PPh 25 mulai Januari 2023 = (1/12) × 2.340.000.000 = <strong>Rp 195.000.000</strong>', variant: 'p25' }
-              ]
+                { label: 'Data', html: 'Ph neto fiskal 2023 menurut RKAP yang disahkan RUPS Januari 2023: <strong>Rp 12.000.000.000</strong><br>PPh Terutang setahun = 22% × 12.000.000.000 = <strong>Rp 2.640.000.000</strong>', variant: 'p25' },
+                { label: 'Dikurangi pemotongan/pemungutan PPh tahun 2022', html: 'PPh Ps. 22: Rp 300.000.000<br>PPh Ps. 23: Rp 0<br>PPh Ps. 24: Rp 0<br>Total: <strong>Rp 300.000.000</strong>', variant: 'p25' },
+                { label: 'PPh yang harus dibayar sendiri', html: 'Rp 2.640.000.000 − Rp 300.000.000 = <strong>Rp 2.340.000.000</strong>', variant: 'p25' }
+              ],
+              final: 'Angsuran PPh 25 mulai Januari 2023 = (1/12) × Rp 2.340.000.000 = Rp 195.000.000'
             },
             {
               type: 'callout',
               variant: 'gold',
               icon: '📌',
-              title: 'Catatan',
-              html: 'RKAP harus disampaikan kepada DJP melalui KPP tempat WP terdaftar, tidak lewat batas waktu pembayaran PPh 25 Masa Pajak pertama tahun pajak berjalan. Jika RKAP belum disahkan, gunakan PPh 25 bulan terakhir tahun pajak sebelumnya.'
-            }
-          ]
-        },
-
-        /* --- WP Baru --- */
-        {
-          type: 'card',
-          variant: 'card-p25',
-          icon: '🆕',
-          title: 'WP Baru: Berbagai Skenario',
-          html: '<p>Wajib Pajak Baru memiliki berbagai skenario perhitungan PPh 25 tergantung jenis dan kondisinya:</p>',
-          extra: [
-            {
-              type: 'reveal',
-              icon: '1️⃣',
-              title: 'WP Baru Biasa (Bank, Bursa, BUMN, BUMD, Lainnya, OPPT)',
-              body: '<p>Angsuran PPh Pasal 25 untuk WP Baru pada Tahun Pajak berjalan <strong>ditetapkan NIHIL</strong>.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '2️⃣',
-              title: 'WP Baru Hasil Penggabungan, Peleburan, atau Pengambilalihan Usaha',
-              body: '<p>Pada sisa Tahun Pajak berjalan, angsuran PPh 25 ditetapkan sebesar <strong>penjumlahan Angsuran PPh 25 dari seluruh WP yang terkait sebelum penggabungan, peleburan, dan/atau pengambilalihan usaha</strong>.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '3️⃣',
-              title: 'WP Hasil Pemekaran Usaha',
-              body: '<p>Jumlah Angsuran PPh 25 untuk seluruh WP hasil pemekaran usaha ditetapkan sebesar Angsuran PPh 25 sebelum pemekaran usaha. Dihitung berdasarkan persentase nilai harta yang dialihkan.</p>'
-            },
-            {
-              type: 'reveal',
-              icon: '4️⃣',
-              title: 'WP Baru Hasil Perubahan Bentuk Badan Usaha',
-              body: '<p>Pada Tahun Pajak berjalan, angsuran PPh 25 ditetapkan sebesar Angsuran PPh 25 bulan terakhir sebelum terjadinya perubahan bentuk badan usaha.</p>'
+              title: 'Ketentuan RKAP',
+              html: '<strong>RKAP</strong> harus disampaikan kepada DJP melalui KPP tempat WP terdaftar, tidak lewat batas waktu pembayaran PPh 25 Masa Pajak pertama Tahun Pajak berjalan. Jika belum disahkan, angsuran untuk bulan-bulan sebelum pengesahan sama dengan <strong>angsuran PPh 25 bulan terakhir tahun pajak sebelumnya</strong>.'
             }
           ]
         },
@@ -1126,74 +860,203 @@ window.TaxQuestContent = {
           type: 'card',
           variant: 'card-p25',
           icon: '🛒',
-          title: 'WP OPPT: 0,75% dari Peredaran Bruto',
+          title: 'WP Orang Pribadi Pengusaha Tertentu (OPPT)',
           html: `
-            <p><strong>Definisi WP OPPT:</strong></p>
+            <p><strong>Pengertian OPPT:</strong></p>
             <ul>
-              <li>WP orang pribadi yang melakukan kegiatan usaha perdagangan atau jasa</li>
-              <li>Tidak termasuk jasa sehubungan dengan pekerjaan bebas</li>
-              <li>Pada 1 atau lebih tempat kegiatan usaha yang berbeda dengan tempat tinggal WP</li>
+              <li>Wajib Pajak orang pribadi yang melakukan kegiatan usaha <strong>perdagangan atau jasa</strong></li>
+              <li>Tidak termasuk jasa sehubungan dengan <strong>pekerjaan bebas</strong></li>
+              <li>Pada <strong>1 atau lebih tempat kegiatan usaha</strong> yang berbeda dengan tempat tinggal Wajib Pajak</li>
             </ul>
-            <div class="callout p25" style="font-family:'JetBrains Mono',monospace;font-size:13px;">
-              PPh 25 = 0,75% × Peredaran Bruto bulanan (per masing-masing tempat usaha)
+            <p><strong>Kewajiban Pendaftaran:</strong> WP OPPT harus mendaftarkan <strong>setiap lokasi usaha</strong> pada wilayah KPP terkait. Tidak boleh mendaftarkan hanya salah satu lokasi jika memiliki lebih dari satu tempat usaha.</p>
+            <p><strong>Kode Akun Pajak:</strong> 411125 &nbsp;|&nbsp; <strong>Kode Jenis Setor:</strong> 101</p>
+            <div class="callout p25" style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:15px;padding:16px;">
+              <strong>PPh 25 = 0,75% × Peredaran Bruto bulanan per lokasi usaha</strong>
             </div>
-            <p><strong>Data Bachtiar:</strong> Memiliki 3 tempat usaha di wilayah kerja KPP Pratama A, B, dan C. Peredaran usaha masa Januari 2023:</p>
+            <p>Pembayaran Angsuran PPh 25 dari masing-masing tempat usaha merupakan <strong>kredit pajak</strong> atas PPh yang terutang untuk Tahun Pajak yang bersangkutan.</p>
           `,
           extra: [
             {
               type: 'table',
-              headers: ['Tempat Usaha', 'Peredaran Bruto', 'PPh 25'],
+              headers: ['Tempat Usaha', 'Peredaran Bruto Jan 2023', 'PPh 25 (0,75%)'],
               rows: [
                 { cells: ['KPP Pratama A', 'Rp 214.020.000', 'Rp 1.605.150'], variant: ['td-label','amt','amt'] },
                 { cells: ['KPP Pratama B', 'Rp 178.050.000', 'Rp 1.335.375'], variant: ['td-label','amt','amt'] },
                 { cells: ['KPP Pratama C', 'Rp 82.110.000',  'Rp 615.825'],   variant: ['td-label','amt','amt'] },
                 { cells: ['<strong>Total</strong>', '', '<strong>Rp 3.556.350</strong>'], variant: ['td-label','','amt'] }
               ]
-            },
-            {
-              type: 'callout',
-              variant: 'p25',
-              icon: '📌',
-              title: 'Catatan',
-              html: 'Setiap lokasi usaha harus didaftarkan di KPP masing-masing. Kode akun pajak: <strong>411125</strong>, kode jenis setor: <strong>101</strong>. Pembayaran per lokasi merupakan kredit pajak.'
             }
           ]
         },
 
-        /* --- Prosedur Pengurangan --- */
+        /* --- WP Baru --- */
+        {
+          type: 'card',
+          variant: 'card-p25',
+          icon: '🆕',
+          title: 'WP Baru: Angsuran NIHIL',
+          html: `
+            <div class="callout p25" style="margin-top:0;">
+              <div class="callout-title">🔑 Prinsip</div>
+              Angsuran PPh 25 untuk Wajib Pajak Baru pada Tahun Pajak berjalan <strong>ditetapkan NIHIL</strong>.
+            </div>
+            <p><strong>Pengecualian:</strong> Ketentuan ini tidak berlaku untuk WP Baru berikut:</p>
+            <ul>
+              <li>Wajib Pajak Bank</li>
+              <li>Wajib Pajak Masuk Bursa</li>
+              <li>Wajib Pajak Badan Usaha Milik Negara</li>
+              <li>Wajib Pajak Badan Usaha Milik Daerah</li>
+              <li>Wajib Pajak Lainnya; dan/atau</li>
+              <li>Wajib Pajak Orang Pribadi Pengusaha Tertentu</li>
+            </ul>
+          `,
+          extra: [
+            {
+              type: 'callout',
+              variant: 'gold',
+              icon: '📌',
+              title: 'Contoh',
+              html: 'PT A terdaftar pada <strong>Februari 2022</strong> di KPP ABC, maka Angsuran PPh Pasal 25 pada Tahun Pajak 2022 (Februari s.d. Desember) untuk PT A adalah <strong>NIHIL</strong>.'
+            }
+          ]
+        },
+
+        /* --- SPT Terlambat / Perpanjangan --- */
         {
           type: 'card',
           variant: 'card-gold',
-          icon: '📋',
-          title: 'Prosedur Pengurangan PPh 25',
-          html: '<p>Jika terjadi perubahan keadaan usaha, WP dapat mengajukan pengurangan atau harus menaikkan PPh 25:</p>',
+          icon: '⏳',
+          title: 'SPT Terlambat &amp; Perpanjangan Jangka Waktu',
+          html: `
+            <div class="callout gold" style="margin-top:0;">
+              <div class="callout-title">🔑 Prinsip Universal</div>
+              Besarnya PPh 25 untuk bulan-bulan mulai <strong>batas waktu penyampaian SPT Tahunan</strong> sampai dengan bulan <strong>sebelum disampaikannya SPT Tahunan</strong> adalah sama dengan besarnya PPh 25 bulan terakhir tahun pajak yang lalu (<strong>bersifat sementara</strong>).
+            </div>
+            <p><strong>Contoh — SPT Terlambat:</strong></p>
+            <ul>
+              <li>SPT Tahunan PPh Tahun 2021 baru disampaikan <strong>Juli 2022</strong> (seharusnya paling lambat akhir April 2022)</li>
+              <li>Angsuran PPh 25 berdasarkan SPT: <strong>Rp 1.300.000</strong></li>
+              <li>Angsuran PPh 25 masa Januari s/d Juni 2022: Rp 1.000.000 (sementara)</li>
+              <li>Setelah diketahui angsuran seharusnya Rp 1.300.000: angsuran PPh 25 mulai masa April 2022 s/d Juli 2022 <strong>ditambah Rp 300.000/bulan</strong> (berikut sanksi)</li>
+            </ul>
+            <p><strong>Contoh — Perpanjangan:</strong></p>
+            <ul>
+              <li>Angsuran PPh 25 Januari–Maret 2021 (SPT 2019): Rp 1.200.000/bulan</li>
+              <li>April 2021 (SPT 2020 sementara): Rp 1.500.000</li>
+              <li>SPT 2020 perpanjangan disampaikan akhir Juni 2021, dengan angsuran PPh 25 = Rp 2.000.000</li>
+              <li>WP menghitung ulang <strong>PPh 29 (kurang bayar)</strong> + sanksi, dan menambah angsuran mulai masa April 2021 sebesar <strong>Rp 500.000/bulan</strong> + sanksi</li>
+            </ul>
+          `
+        },
+
+        /* --- Pembetulan SPT --- */
+        {
+          type: 'card',
+          variant: 'card-gold',
+          icon: '✏️',
+          title: 'Wajib Pajak Membetulkan Sendiri SPT',
+          html: `
+            <div class="callout gold" style="margin-top:0;">
+              <div class="callout-title">📝 Aturan</div>
+              Jika WP membetulkan sendiri SPT Tahunan PPh yang mengakibatkan <strong>angsuran bulanan lebih besar</strong> dari angsuran bulanan sebelum pembetulan, maka besarnya PPh 25 dihitung kembali berdasarkan <strong>SPT Tahunan Pembetulan</strong> dan <strong>berlaku surut</strong> mulai bulan batas waktu penyampaian SPT Tahunan.
+            </div>
+          `,
+          extra: [
+            {
+              type: 'calc',
+              steps: [
+                { label: 'Contoh Kasus', html: 'Angsuran PPh Ps. 25 mulai masa April 2023 (berdasarkan SPT 2021 sebelum pembetulan) = <strong>Rp 2.500.000</strong><br><br>Bulan Agustus 2024, WP membetulkan sendiri SPT Tahunan PPh 2023 dengan perhitungan angsuran PPh Ps. 25 = <strong>Rp 3.000.000</strong><br><br>→ Angsuran PPh Ps. 25 sebesar Rp 3.000.000 <strong>berlaku surut mulai masa April 2024</strong><br>→ Selisih Rp 500.000/bulan untuk masa April–Juli 2024 harus dibayar (berikut sanksi)', variant: 'p25' }
+              ]
+            }
+          ]
+        },
+
+        /* --- Kompensasi Kerugian --- */
+        {
+          type: 'card',
+          variant: 'card-p25',
+          icon: '📉',
+          title: 'WP Berhak atas Kompensasi Kerugian',
+          html: `
+            <p>Kerugian fiskal dapat dikompensasikan dengan penghasilan mulai tahun pajak berikutnya <strong>berturut-turut sampai dengan 5 (lima) tahun</strong>.</p>
+            <p><strong>Data:</strong></p>
+            <ul>
+              <li>Ph neto Tahun 2023: Rp 116.800.000</li>
+              <li>Sisa kerugian Tahun 2019 yang belum dikompensasikan: Rp 166.800.000</li>
+              <li>Ph neto Tahun 2024: Rp 115.840.000</li>
+            </ul>
+          `,
+          extra: [
+            {
+              type: 'calc',
+              steps: [
+                { label: 'Perhitungan Tahun 2023', html: 'Ph neto 2023: Rp 116.800.000<br>Kompensasi kerugian 2019: (Rp 166.800.000)<br>Ph neto setelah kompensasi: <strong>(Rp 50.000.000)</strong><br>Karena masih rugi → <strong>Angsuran PPh 25 Tahun 2024 = NIHIL</strong>', variant: 'p25' },
+                { label: 'Perhitungan Tahun 2024', html: 'Ph neto 2024: Rp 115.840.000<br>Sisa kerugian 2019 yang masih dapat dikompensasi: (Rp 50.000.000)<br>Ph neto setelah kompensasi: <strong>Rp 65.840.000</strong><br><br>PPh terutang = 22% × Rp 65.840.000 = <strong>Rp 14.484.800</strong><br>PPh yang masih harus dibayar sendiri = Rp 14.484.800<br>Angsuran PPh Ps. 25 Tahun 2024 = 0<br>PPh Kurang Bayar (PPh Ps. 29) = Rp 14.484.800<br><br>Angsuran PPh Ps. 25 Tahun 2025 = (1/12) × Rp 14.484.800 = <strong>Rp 1.207.067</strong>', variant: 'p25' }
+              ]
+            }
+          ]
+        },
+
+        /* --- Perubahan Keadaan Usaha --- */
+        {
+          type: 'card',
+          variant: 'card-gold',
+          icon: '📊',
+          title: 'Terjadi Perubahan Keadaan Usaha',
+          html: '<p>Ada dua skenario perubahan yang perlu diperhatikan:</p>',
           extra: [
             {
               type: 'two-col',
               left: {
                 variant: 'p24',
-                title: '📉 Usaha Menurun',
+                title: '📉 Usaha Menurun (< 75%)',
                 html: `
-                  <p><strong>Syarat:</strong> Setelah 3 bulan atau lebih berjalannya tahun pajak, WP dapat menunjukkan bahwa PPh terutang akan <strong>kurang dari 75%</strong> dari PPh terutang yang menjadi dasar perhitungan PPh 25.</p>
-                  <p>WP dapat mengajukan permohonan tertulis ke KPP.</p>
+                  <p>Apabila setelah <strong>3 bulan atau lebih</strong> berjalannya suatu tahun pajak, WP dapat menunjukkan bahwa PPh yang akan terutang untuk tahun pajak tersebut <strong>kurang dari 75%</strong> dari PPh terutang yang menjadi dasar penghitungan PPh 25:</p>
+                  <ul>
+                    <li>WP dapat mengajukan <strong>permohonan pengurangan</strong> PPh 25 secara tertulis kepada Kepala KPP tempat WP terdaftar</li>
+                    <li>Disertai penghitungan PPh yang akan terutang berdasarkan perkiraan penghasilan dan besarnya PPh 25 untuk bulan-bulan tersisa</li>
+                    <li>Jika dalam <strong>1 bulan</strong> tidak ada keputusan, permohonan <strong>dianggap diterima</strong></li>
+                  </ul>
+                  <p style="font-size:12px;color:var(--ink-3);margin-top:8px;"><em>Dasar: Pasal 7 KEP-537/PJ./2000</em></p>
                 `
               },
               right: {
                 variant: 'p25',
-                title: '📈 Usaha Meningkat',
+                title: '📈 Usaha Meningkat (> 150%)',
                 html: `
-                  <p>Jika dalam tahun pajak berjalan, WP mengalami peningkatan usaha dan PPh terutang diperkirakan <strong>lebih dari 150%</strong> dari dasar perhitungan PPh 25, maka PPh 25 untuk bulan-bulan tersisa harus dihitung kembali.</p>
+                  <p>Apabila dalam tahun pajak berjalan WP mengalami <strong>peningkatan usaha</strong> dan diperkirakan PPh terutang untuk tahun tersebut <strong>lebih dari 150%</strong> dari PPh terutang yang menjadi dasar penghitungan PPh 25:</p>
+                  <ul>
+                    <li>Besarnya PPh 25 untuk bulan-bulan yang tersisa dari tahun pajak yang bersangkutan <strong>harus dihitung kembali</strong></li>
+                    <li>Berdasarkan perkiraan kenaikan PPh terutang tersebut</li>
+                    <li>Dihitung oleh <strong>WP sendiri</strong> atau <strong>Kepala KPP</strong> tempat WP terdaftar</li>
+                  </ul>
                 `
               }
+            }
+          ]
+        },
+
+        /* --- Contoh Perubahan Usaha --- */
+        {
+          type: 'card',
+          variant: 'card-p25',
+          icon: '👤',
+          title: 'Contoh: Perubahan Keadaan Usaha (Orang Pribadi)',
+          html: `
+            <p><strong>WP Orang Pribadi (K/1) — Jasa Konsultan Hukum</strong></p>
+            <p>SPT Tahunan PPh OP Tahun 2022 disampaikan akhir Maret 2023:</p>
+          `,
+          extra: [
+            {
+              type: 'calc',
+              steps: [
+                { label: 'Perhitungan Tahun 2022', html: 'Ph neto dari klien beberapa perusahaan dan praktik di kediaman sendiri: Rp 263.000.000<br>PTKP (K/1): (Rp 63.000.000)<br>Ph KP: <strong>Rp 200.000.000</strong><br><br>PPh terutang 2022:<br>5% × Rp 60.000.000 = Rp 3.000.000<br>15% × Rp 140.000.000 = Rp 21.000.000<br>Jumlah = <strong>Rp 24.000.000</strong><br><br>Kredit Pajak: Rp 2.700.000<br>PPh yang harus dibayar sendiri = <strong>Rp 21.300.000</strong><br>PPh dibayar sendiri (PPh 25 Jan–Des 2022) = Rp 18.000.000<br>PPh Kurang Bayar Tahun 2022 = <strong>Rp 3.300.000</strong><br><br>Angsuran PPh Ps. 25 Tahun 2023 = (1/12) × 21.300.000 = <strong>Rp 1.775.000</strong>', variant: 'p25' }
+              ]
             },
             {
-              type: 'flow',
+              type: 'calc',
               steps: [
-                { text: '1. Ajukan permohonan tertulis ke KPP', variant: '' },
-                { text: '2. Sertakan penghitungan PPh terutang yang diperkirakan', variant: '' },
-                { text: '3. Tunggu keputusan (maks 1 bulan)', variant: '' },
-                { text: '4. Jika tidak dijawab → dianggap DITERIMA', variant: 'gold' },
-                { text: '5. Bayar PPh 25 sesuai perhitungan baru', variant: 'p25' }
+                { label: 'Perhitungan Ulang 2023 (setelah usaha menurun)', html: 'Ph neto turun menjadi: Rp 163.000.000<br>PTKP (K/1): (Rp 63.000.000)<br>Ph KP: <strong>Rp 100.000.000</strong><br><br>PPh terutang 2023:<br>5% × Rp 60.000.000 = Rp 3.000.000<br>15% × Rp 40.000.000 = Rp 6.000.000<br>Jumlah = <strong>Rp 9.000.000</strong><br><br>PPh Ps. 25 Januari s/d Mei 2023 sudah dibayar: Rp 7.900.000<br>PPh yang masih harus dibayar sendiri 7 bulan: Rp 1.100.000<br><strong>Angsuran PPh Ps. 25 per bulan = (1/7) × 1.100.000 = Rp 157.143</strong>', variant: 'p25' }
               ]
             }
           ]
@@ -1205,42 +1068,70 @@ window.TaxQuestContent = {
           id: 'q25-1',
           badge: 'Kuis PPh 25',
           xp: 10,
-          q: 'Apa perbedaan mendasar PPh 25 dengan PPh 24?',
+          q: 'Bagaimana formula perhitungan PPh 25 secara umum?',
           options: [
-            { text: 'PPh 25 dihitung akhir tahun, PPh 24 bulanan', correct: false },
-            { text: 'PPh 24 = kredit pajak LN (akhir tahun), PPh 25 = angsuran bulanan (tahun berjalan)', correct: true },
-            { text: 'Keduanya sama, hanya berbeda pasal', correct: false },
-            { text: 'PPh 25 hanya untuk badan, PPh 24 hanya untuk orang pribadi', correct: false }
+            { text: '22% × Penghasilan Neto', correct: false },
+            { text: '(PPh Terutang − Kredit Pajak) ÷ 12', correct: true },
+            { text: '0,75% × Peredaran Bruto', correct: false },
+            { text: 'PPh Terutang × 12', correct: false }
           ],
-          explanation: 'PPh 24 adalah kredit pajak luar negeri yang dihitung di akhir tahun, sedangkan PPh 25 adalah angsuran pajak yang dibayar bulanan sepanjang tahun berjalan.'
+          explanation: 'Perhitungan umum PPh 25 = (PPh Terutang − Kredit Pajak) ÷ 12, atau dibagi banyaknya bulan dalam tahun berjalan.'
         },
         {
           type: 'quiz',
           id: 'q25-2',
           badge: 'Kuis PPh 25',
           xp: 10,
-          q: 'PT JKL: PPh Terutang Rp 240 juta, Kredit PPh 22 Rp 20 juta. Berapa PPh 25 bulanan?',
+          q: 'Besarnya angsuran PPh 25 sebelum SPT Tahunan disampaikan adalah…',
           options: [
-            { text: 'Rp 20.000.000', correct: false },
-            { text: 'Rp 18.333.333', correct: true },
-            { text: 'Rp 22.000.000', correct: false },
-            { text: 'Rp 240.000.000', correct: false }
+            { text: 'Nihil', correct: false },
+            { text: 'Sama dengan PPh 25 bulan terakhir tahun pajak yang lalu', correct: true },
+            { text: 'Dua kali lipat angsuran tahun lalu', correct: false },
+            { text: 'Belum ditentukan sampai SPT disampaikan', correct: false }
           ],
-          explanation: 'PPh yang harus dibayar sendiri = 240jt − 20jt = 220jt. PPh 25 = (1/12) × 220jt = Rp 18.333.333/bulan.'
+          explanation: 'Untuk bulan-bulan sebelum SPT disampaikan, angsuran PPh 25 sama dengan angsuran bulan terakhir tahun pajak yang lalu — bersifat sementara.'
         },
         {
           type: 'quiz',
           id: 'q25-3',
           badge: 'Kuis PPh 25',
           xp: 10,
-          q: 'Bagaimana perlakuan penghasilan tidak teratur dalam perhitungan dasar PPh 25?',
+          q: 'Bagaimana perhitungan PPh 25 untuk WP Bank?',
           options: [
-            { text: 'Dimasukkan penuh sebagai dasar perhitungan', correct: false },
-            { text: 'Dikeluarkan dari dasar perhitungan PPh 25', correct: true },
-            { text: 'Dikenai PPh final terpisah', correct: false },
-            { text: 'Diabaikan sepenuhnya', correct: false }
+            { text: '1/12 × PPh terutang tahun lalu', correct: false },
+            { text: 'Berdasarkan laporan keuangan bulanan: (Tarif × Ph Neto) − PPh 22 − PPh 25 sebelumnya', correct: true },
+            { text: '0,75% × peredaran bruto', correct: false },
+            { text: 'Nihil sampai ada SPT', correct: false }
           ],
-          explanation: 'Penghasilan tidak teratur seperti capital gain, selisih kurs, dan penghasilan insidentil dikeluarkan dari dasar perhitungan PPh 25 karena sifatnya yang tidak berulang.'
+          explanation: 'WP Bank menghitung PPh 25 berdasarkan laporan keuangan bulanan yang disampaikan ke OJK: (Tarif Pasal 17 × Penghasilan Neto) − PPh Ps. 22 − PPh Ps. 25 yang seharusnya dibayar sejak awal tahun.'
+        },
+        {
+          type: 'quiz',
+          id: 'q25-4',
+          badge: 'Kuis PPh 25',
+          xp: 10,
+          q: 'Berapa angsuran PPh 25 untuk WP OPPT per lokasi usaha?',
+          options: [
+            { text: '22% × laba usaha', correct: false },
+            { text: '0,75% × peredaran bruto bulanan', correct: true },
+            { text: '1/12 × PPh terutang', correct: false },
+            { text: '5% × keuntungan', correct: false }
+          ],
+          explanation: 'WP OPPT (Orang Pribadi Pengusaha Tertentu) menghitung PPh 25 sebesar 0,75% dari peredaran bruto bulanan untuk masing-masing tempat usaha.'
+        },
+        {
+          type: 'quiz',
+          id: 'q25-5',
+          badge: 'Kuis PPh 25',
+          xp: 10,
+          q: 'Berapa angsuran PPh 25 untuk Wajib Pajak Baru (non-bank, non-BUMN)?',
+          options: [
+            { text: '1/12 × PPh terutang', correct: false },
+            { text: 'NIHIL', correct: true },
+            { text: '0,75% × peredaran bruto', correct: false },
+            { text: '22% × penghasilan', correct: false }
+          ],
+          explanation: 'Angsuran PPh 25 untuk Wajib Pajak Baru (selain WP Bank, WP Masuk Bursa, BUMN/BUMD, WP Lainnya, dan WP OPPT) pada Tahun Pajak berjalan ditetapkan NIHIL.'
         },
 
         {
@@ -1281,12 +1172,11 @@ window.TaxQuestContent = {
                 <tr><td class="td-label">Tujuan</td><td class="td-p24">Menghindari double taxation</td><td class="td-p25">Meringankan beban pajak akhir tahun</td></tr>
                 <tr><td class="td-label">Timing</td><td class="td-p24">Akhir tahun (SPT Tahunan)</td><td class="td-p25">Bulanan (tahun berjalan)</td></tr>
                 <tr><td class="td-label">Sifat</td><td class="td-p24"><strong>KREDIT</strong> pajak (pengurang)</td><td class="td-p25"><strong>ANGSURAN</strong> pajak (pembayaran)</td></tr>
-                <tr><td class="td-label">Konteks WP</td><td class="td-p24">WP dengan penghasilan LN</td><td class="td-p25">WP yang wajib bayar angsuran</td></tr>
-                <tr><td class="td-label">Dasar Hitung</td><td class="td-p24">Pajak yang dibayar di LN</td><td class="td-p25">PPh terutang tahun lalu</td></tr>
-                <tr><td class="td-label">Formula</td><td class="td-p24">min(PPh LN, Jumlah Tertentu, P3B)</td><td class="td-p25">1/12 × PPh yang harus dibayar sendiri</td></tr>
-                <tr><td class="td-label">Mekanisme</td><td class="td-p24">Kredit terhadap PPh terutang</td><td class="td-p25">Pembayaran bertahap</td></tr>
+                <tr><td class="td-label">Dasar Hitung</td><td class="td-p24">PPh Luar Negeri yang dibayar/terutang</td><td class="td-p25">PPh terutang tahun lalu</td></tr>
+                <tr><td class="td-label">Formula</td><td class="td-p24">min(PPh LN, Jumlah Tertentu)</td><td class="td-p25">(PPh Terutang − Kredit Pajak) ÷ 12</td></tr>
+                <tr><td class="td-label">Per Negara</td><td class="td-p24">Ya — per negara &amp; per jenis penghasilan</td><td class="td-p25">Tidak — per WP</td></tr>
                 <tr><td class="td-label">Hubungan SPT</td><td class="td-p24">Komponen kredit pajak</td><td class="td-p25">Komponen kredit pajak</td></tr>
-                <tr><td class="td-label">Kesalahan umum</td><td class="td-p24">Mengira semua pajak LN bisa dikreditkan</td><td class="td-p25">Mengira PPh 25 = PPh terutang ÷ 12</td></tr>
+                <tr><td class="td-label">Kelebihan</td><td class="td-p24">Tidak bisa direstitusi / dibiayakan</td><td class="td-p25">Dapat dipindahbukukan ke masa berikutnya</td></tr>
               </tbody>
             </table>
           `
@@ -1302,11 +1192,11 @@ window.TaxQuestContent = {
             {
               type: 'myth-fact',
               items: [
-                { myth: 'Semua pajak yang dibayar di LN bisa dikreditkan.', fact: 'Hanya pajak yang <strong>LANGSUNG</strong> dikenakan atas penghasilan yang diterima WP DN. Pajak badan LN tidak bisa dikreditkan.' },
-                { myth: 'PPh 25 = PPh terutang ÷ 12.', fact: 'PPh 25 = 1/12 × PPh yang <strong>harus dibayar sendiri</strong> (setelah dikurangi kredit pajak: PPh 22, 23, 24, dan 25 yang sudah dibayar).' },
-                { myth: 'Kerugian LN bisa mengurangi penghasilan DN.', fact: 'Kerugian LN <strong>TIDAK BOLEH</strong> digabung, kecuali memiliki hubungan efektif dengan cabang/BUT di luar negeri.' },
-                { myth: 'Kredit pajak bisa melebihi PPh terutang.', fact: 'Kredit pajak <strong>TIDAK BOLEH</strong> melebihi PPh terutang. Jika melebihi, dibatasi &amp; dialokasikan proporsional antar negara.' },
-                { myth: 'Penghasilan final dimasukkan dalam PKP untuk PPh 24.', fact: 'Penghasilan yang dikenai <strong>PPh Final</strong> dan penghasilan istri yang dikenai pajak tersendiri <strong>TIDAK DIMASUKKAN</strong> dalam PKP untuk menghitung PPh 24.' }
+                { myth: 'Semua pajak yang dibayar di LN bisa dikreditkan.', fact: 'Hanya pajak yang <strong>terutang, dibayar, atau dipotong di luar negeri</strong> atas penghasilan dari luar negeri yang dapat dikreditkan — dan dibatasi Jumlah Tertentu.' },
+                { myth: 'PPh 25 = PPh terutang ÷ 12.', fact: 'PPh 25 = <strong>(PPh Terutang − Kredit Pajak) ÷ 12</strong> — kredit pajak (PPh 21, 22, 23, 24) dikurangkan dulu.' },
+                { myth: 'Kerugian LN bisa mengurangi penghasilan DN.', fact: 'Kerugian LN <strong>TIDAK DAPAT dikompensasikan</strong> dengan penghasilan yang diterima atau diperoleh dari Indonesia.' },
+                { myth: 'Kelebihan kredit PPh 24 dapat direstitusi.', fact: 'Kelebihan kredit PPh 24 <strong>TIDAK dapat</strong> diperhitungkan tahun berikutnya, <strong>TIDAK boleh</strong> dibiayakan, dan <strong>TIDAK dapat</strong> dimintakan restitusi.' },
+                { myth: 'Penghasilan final dimasukkan dalam PKP untuk PPh 24.', fact: 'Penghasilan yang dikenai <strong>PPh Final</strong> dan/atau pajak tersendiri <strong>TIDAK DIMASUKKAN</strong> dalam PKP untuk perhitungan PPh 24.' }
               ]
             }
           ]
@@ -1316,13 +1206,13 @@ window.TaxQuestContent = {
           type: 'card',
           variant: 'card-dark',
           icon: '🗺️',
-          title: 'Posisi PPh 24 &amp; PPh 25 dalam Alur SPT Tahunan',
+          title: 'Posisi dalam Alur SPT Tahunan',
           html: `
             <p style="color:rgba(255,255,255,.85);margin-bottom:20px;">Dimana masing-masing pasal berperan dalam perhitungan PPh Badan?</p>
             <div class="flow">
               <div class="flow-step">Penghasilan Bruto (DN + LN)</div>
               <div class="flow-arrow">▼</div>
-              <div class="flow-step">− Biaya (3M) &amp; Koreksi Fiskal</div>
+              <div class="flow-step">− Biaya &amp; Koreksi Fiskal</div>
               <div class="flow-arrow">▼</div>
               <div class="flow-step gold">+ Gabungkan Penghasilan LN ← <strong>PPh 24 (peran 1)</strong></div>
               <div class="flow-arrow">▼</div>
@@ -1353,7 +1243,7 @@ window.TaxQuestContent = {
       tab: { label: 'Studi Kasus', num: 5 },
       head: {
         kicker: 'Misi 5 · Studi Kasus',
-        title: 'PT Maju Jaya — Tahun Pajak 2025',
+        title: 'PT Sejahtera Jaya — Tahun Pajak 2025',
         desc: 'Integrasikan seluruh konsep PPh 24 dan PPh 25 dalam satu kasus komprehensif. Anda berperan sebagai staf pajak.'
       },
       blocks: [
@@ -1363,15 +1253,14 @@ window.TaxQuestContent = {
           icon: '🎯',
           title: 'Brief Misi',
           html: `
-            <p>Anda adalah staf pajak PT Maju Jaya. Siapkan perhitungan PPh Badan tahun 2025 berdasarkan data berikut:</p>
+            <p>Anda adalah staf pajak PT Sejahtera Jaya. Siapkan perhitungan PPh Badan tahun 2025 berdasarkan data berikut:</p>
             <ul>
-              <li><strong>Penghasilan neto dalam negeri:</strong> Rp 5.000.000.000</li>
-              <li><strong>Negara A (usaha):</strong> Rp 1.500.000.000 — PPh LN Rp 300.000.000</li>
+              <li><strong>Penghasilan neto dalam negeri (non-final):</strong> Rp 5.000.000.000</li>
+              <li><strong>Negara A (usaha):</strong> Rp 1.500.000.000 — PPh LN Rp 400.000.000</li>
               <li><strong>Negara B (bunga):</strong> Rp 500.000.000 — PPh LN Rp 100.000.000</li>
-              <li><strong>Kerugian Negara C:</strong> Rp 200.000.000 (tidak ada cabang)</li>
-              <li><strong>Kredit pajak:</strong> PPh 22 Rp 150.000.000 · PPh 23 Rp 50.000.000</li>
+              <li><strong>Kerugian Negara C:</strong> Rp 200.000.000 (bukan dari cabang)</li>
+              <li><strong>Kredit pajak dalam negeri:</strong> PPh 22 Rp 150.000.000 · PPh 23 Rp 50.000.000</li>
               <li><strong>PPh 25 sudah dibayar:</strong> Rp 500.000.000</li>
-              <li><strong>Tidak ada P3B</strong></li>
             </ul>
             <div class="callout gold" style="margin-top:12px;">
               <div class="callout-title">🎯 Target Perhitungan</div>
@@ -1392,7 +1281,7 @@ window.TaxQuestContent = {
                 Penghasilan LN yang digabungkan:<br>
                 &nbsp;&nbsp;• Negara A: Rp 1.500.000.000<br>
                 &nbsp;&nbsp;• Negara B: Rp 500.000.000<br>
-                &nbsp;&nbsp;• Negara C (rugi): <em>tidak digabung (tidak ada cabang)</em><br>
+                &nbsp;&nbsp;• Negara C (rugi): <em>tidak digabung — bukan dari cabang</em><br>
                 <strong>Jumlah LN = Rp 2.000.000.000</strong><br><br>
                 PKP = Rp 5.000.000.000 + Rp 2.000.000.000 = <strong>Rp 7.000.000.000</strong>
               </div>
@@ -1417,8 +1306,8 @@ window.TaxQuestContent = {
               <div class="calc-label">Negara A — Penghasilan Usaha</div>
               <div class="calc-body">
                 Jumlah Tertentu = (1.500.000.000 / 7.000.000.000) × 1.540.000.000 = <strong>Rp 330.000.000</strong><br>
-                PPh LN = Rp 300.000.000<br>
-                → PPh 24 = <strong>Rp 300.000.000</strong> (nilai terkecil)
+                PPh LN = Rp 400.000.000<br>
+                → PPh 24 = <strong>Rp 330.000.000</strong> <em>(Jumlah Tertentu lebih kecil)</em>
               </div>
             </div>
             <div class="calc-step p24">
@@ -1426,13 +1315,13 @@ window.TaxQuestContent = {
               <div class="calc-body">
                 Jumlah Tertentu = (500.000.000 / 7.000.000.000) × 1.540.000.000 = <strong>Rp 110.000.000</strong><br>
                 PPh LN = Rp 100.000.000<br>
-                → PPh 24 = <strong>Rp 100.000.000</strong> (nilai terkecil)
+                → PPh 24 = <strong>Rp 100.000.000</strong> <em>(PPh LN lebih kecil)</em>
               </div>
             </div>
-            <div class="calc-final">Total PPh 24 = Rp 300.000.000 + Rp 100.000.000 = Rp 400.000.000</div>
+            <div class="calc-final">Total PPh 24 = Rp 330.000.000 + Rp 100.000.000 = Rp 430.000.000</div>
           `,
           extra: [
-            { type: 'callout', variant: 'warn', icon: '⚠️', title: 'Perhatikan', html: 'Kerugian Negara C sebesar Rp 200.000.000 <strong>TIDAK DAPAT</strong> digabungkan karena tidak ada cabang di Negara C.' },
+            { type: 'callout', variant: 'warn', icon: '⚠️', title: 'Perhatikan', html: 'Kerugian Negara C sebesar Rp 200.000.000 <strong>TIDAK DAPAT</strong> dikompensasikan karena bukan dari cabang/perwakilan di luar negeri.' },
             { type: 'xp-button', label: '✓ Paham Langkah 2', xp: 15, msg: 'Langkah 2 selesai!' }
           ]
         },
@@ -1448,22 +1337,22 @@ window.TaxQuestContent = {
                 <tr><td class="td-label">PPh Terutang</td><td class="amt">Rp 1.540.000.000</td></tr>
                 <tr><td>Kredit PPh 22</td><td class="amt">(Rp 150.000.000)</td></tr>
                 <tr><td>Kredit PPh 23</td><td class="amt">(Rp 50.000.000)</td></tr>
-                <tr><td>Kredit PPh 24</td><td class="amt">(Rp 400.000.000)</td></tr>
+                <tr><td>Kredit PPh 24</td><td class="amt">(Rp 430.000.000)</td></tr>
                 <tr><td>Kredit PPh 25</td><td class="amt">(Rp 500.000.000)</td></tr>
-                <tr class="row-subtotal"><td><strong>Total Kredit Pajak</strong></td><td class="amt"><strong>Rp 1.100.000.000</strong></td></tr>
-                <tr class="row-total"><td><strong>PPh Kurang Bayar (PPh 29)</strong></td><td class="amt"><strong>Rp 440.000.000</strong></td></tr>
+                <tr class="row-subtotal"><td><strong>Total Kredit Pajak</strong></td><td class="amt"><strong>Rp 1.130.000.000</strong></td></tr>
+                <tr class="row-total"><td><strong>PPh Kurang Bayar (PPh 29)</strong></td><td class="amt"><strong>Rp 410.000.000</strong></td></tr>
               </tbody>
             </table>
             <div class="calc-step p25" style="margin-top:16px;">
               <div class="calc-label">Proyeksi PPh 25 Tahun Berikutnya (2026)</div>
               <div class="calc-body">
-                PPh yang harus dibayar sendiri = 1.540.000.000 − 150.000.000 − 50.000.000 − 400.000.000 = <strong>Rp 940.000.000</strong><br>
-                PPh 25 = (1/12) × Rp 940.000.000 = <strong>Rp 78.333.333/bulan</strong>
+                PPh yang harus dibayar sendiri = 1.540.000.000 − 150.000.000 − 50.000.000 − 430.000.000 = <strong>Rp 910.000.000</strong><br>
+                PPh 25 = (1/12) × Rp 910.000.000 = <strong>Rp 75.833.333/bulan</strong>
               </div>
             </div>
           `,
           extra: [
-            { type: 'callout', variant: 'ok', icon: '✅', title: 'Interpretasi Akhir', html: 'PT Maju Jaya harus menyetor <strong>PPh 29 sebesar Rp 440.000.000</strong> paling lambat sebelum SPT disampaikan. Untuk tahun 2026, angsuran PPh 25 menjadi <strong>Rp 78.333.333/bulan</strong>.' },
+            { type: 'callout', variant: 'ok', icon: '✅', title: 'Interpretasi Akhir', html: 'PT Sejahtera Jaya harus menyetor <strong>PPh 29 sebesar Rp 410.000.000</strong> paling lambat sebelum SPT disampaikan. Untuk tahun 2026, angsuran PPh 25 menjadi <strong>Rp 75.833.333/bulan</strong>.' },
             { type: 'xp-button', label: '✓ Selesaikan Studi Kasus', xp: 25, msg: 'Studi kasus selesai!' }
           ]
         },
@@ -1507,101 +1396,106 @@ window.TaxQuestContent = {
         'Membatasi penghasilan dari luar negeri'
       ],
       correct: 1,
-      explanation: 'PPh 24 menghindari double taxation atas penghasilan yang sudah dipajaki di negara sumber namun juga berpotensi dipajaki di Indonesia.'
+      explanation: 'PPh 24 menghindari double taxation atas penghasilan yang sudah dipajaki di negara sumber namun juga berpotensi dipajaki di Indonesia karena sistem worldwide income.'
     },
     {
-      q: 'Bagaimana formula PPh 24 yang dapat dikreditkan?',
+      q: 'Kapan penghasilan usaha dari luar negeri digabungkan dengan penghasilan dalam negeri?',
+      options: [
+        'Tahun pajak diterimanya',
+        'Tahun pajak diperolehnya penghasilan usaha',
+        'Tahun pajak berikutnya',
+        'Saat dividen dibagikan'
+      ],
+      correct: 1,
+      explanation: 'Untuk penghasilan dari usaha, penggabungan dilakukan dalam tahun pajak diperolehnya penghasilan usaha tersebut.'
+    },
+    {
+      q: 'Bagaimana formula batas maksimum kredit pajak luar negeri?',
       options: [
         'PPh LN × tarif Indonesia',
-        'Nilai terkecil dari (PPh LN, Jumlah Tertentu, Pajak menurut P3B)',
+        '(Penghasilan LN / PKP) × PPh Terutang',
         'PPh Terutang ÷ jumlah negara',
-        'Jumlah Tertentu + PPh LN'
+        'PPh LN + Jumlah Tertentu'
       ],
       correct: 1,
-      explanation: 'PPh 24 = min(PPh LN, Jumlah Tertentu, Pajak menurut P3B). Nilai terkecil dari tiga komponen inilah yang dapat dikreditkan.'
+      explanation: 'Jumlah Tertentu = (Penghasilan Luar Negeri / PKP) × PPh Terutang. PPh 24 = nilai terkecil antara PPh LN dan Jumlah Tertentu.'
     },
     {
-      q: 'Bagaimana perlakuan kerugian dari luar negeri?',
+      q: 'Apa yang terjadi dengan kelebihan kredit PPh 24?',
       options: [
-        'Selalu bisa digabungkan dengan penghasilan DN',
-        'Tidak boleh digabung kecuali memiliki hubungan efektif dengan cabang/BUT',
-        'Hanya bisa digabung jika ada P3B',
-        'Selalu diabaikan sepenuhnya'
+        'Dapat direstitusi ke negara',
+        'Dapat dibiayakan sebagai pengurang',
+        'Tidak dapat diperhitungkan tahun berikutnya, tidak dibiayakan, dan tidak direstitusi',
+        'Otomatis menjadi kredit tahun berikutnya'
       ],
-      correct: 1,
-      explanation: 'Kerugian LN tidak boleh digabung dengan penghasilan DN, KECUALI jika berasal dari harta/kegiatan yang memiliki hubungan efektif dengan cabang atau BUT di luar negeri.'
+      correct: 2,
+      explanation: 'Kelebihan kredit PPh 24 tidak dapat diperhitungkan dengan PPh terutang tahun berikutnya, tidak boleh dibebankan sebagai biaya/pengurang, dan tidak dapat dimintakan restitusi.'
     },
     {
-      q: 'Jika PPh LN Rp 300jt, Jumlah Tertentu Rp 220jt, dan PPh Terutang Rp 660jt — berapa PPh 24 yang dapat dikreditkan?',
-      options: ['Rp 300.000.000', 'Rp 220.000.000', 'Rp 660.000.000', 'Rp 80.000.000'],
-      correct: 1,
-      explanation: 'Nilai terkecil dari tiga komponen: Rp 220.000.000 (Jumlah Tertentu) < Rp 300.000.000 (PPh LN) < Rp 660.000.000 (PPh Terutang). Maka PPh 24 = Rp 220.000.000.'
-    },
-    {
-      q: 'Bagaimana formula dasar PPh Pasal 25?',
+      q: 'Bagaimana formula perhitungan umum PPh 25?',
       options: [
         '22% × Penghasilan Neto',
-        '1/12 × PPh yang harus dibayar sendiri',
+        '(PPh Terutang − Kredit Pajak) ÷ 12',
         '1/12 × PPh Terutang',
         '0,75% × Peredaran Bruto'
       ],
       correct: 1,
-      explanation: 'PPh 25 = 1/12 × PPh yang harus dibayar sendiri. Yang dimaksud "harus dibayar sendiri" adalah PPh Terutang dikurangi kredit pajak (PPh 22, 23, 24, dan 25 yang sudah dibayar).'
+      explanation: 'Perhitungan umum PPh 25 = (PPh Terutang − Kredit Pajak) ÷ 12, atau dibagi banyaknya bulan dalam tahun berjalan.'
     },
     {
-      q: 'Bagaimana perlakuan penghasilan tidak teratur dalam perhitungan dasar PPh 25?',
+      q: 'Berapa angsuran PPh 25 untuk Wajib Pajak Baru (non-Bank, non-BUMN)?',
       options: [
-        'Dimasukkan penuh sebagai dasar',
-        'Dikeluarkan dari dasar perhitungan',
-        'Dikenai PPh final terpisah',
-        'Diabaikan sepenuhnya'
+        '1/12 × PPh terutang',
+        'NIHIL',
+        '0,75% × peredaran bruto',
+        '22% × penghasilan'
       ],
       correct: 1,
-      explanation: 'Penghasilan tidak teratur (capital gain, selisih kurs, insidentil) dikeluarkan dari dasar perhitungan PPh 25 karena sifatnya yang tidak berulang.'
+      explanation: 'Angsuran PPh 25 untuk Wajib Pajak Baru (selain WP Bank, WP Masuk Bursa, BUMN/BUMD, WP Lainnya, dan WP OPPT) ditetapkan NIHIL pada Tahun Pajak berjalan.'
     },
     {
-      q: 'WP OPPT menghitung PPh 25 sebesar…',
+      q: 'Bagaimana perhitungan PPh 25 untuk WP OPPT?',
       options: [
-        '22% × penghasilan neto per lokasi',
-        '0,75% × peredaran bruto per lokasi per bulan',
-        '1/12 × PPh Terutang',
-        '5% × keuntungan'
+        '1/12 × PPh terutang',
+        '0,75% × peredaran bruto bulanan per lokasi usaha',
+        '22% × penghasilan neto',
+        'Sama dengan WP Bank'
       ],
       correct: 1,
-      explanation: 'WP OPPT (Orang Pribadi Pengusaha Tertentu) menghitung PPh 25 sebesar 0,75% dari peredaran bruto bulanan untuk setiap lokasi usaha yang berbeda dengan tempat tinggal.'
+      explanation: 'WP OPPT menghitung PPh 25 sebesar 0,75% dari peredaran bruto bulanan untuk setiap lokasi usaha yang berbeda dengan tempat tinggal.'
     },
     {
-      q: 'Apa yang dimaksud "PPh yang harus dibayar sendiri" dalam formula PPh 25?',
+      q: 'Dasar perhitungan PPh 25 untuk WP Bank adalah…',
       options: [
-        'PPh Terutang × tarif',
-        'PPh Terutang dikurangi kredit pajak (PPh 22, 23, 24, 25 yang sudah dibayar)',
-        'Penghasilan neto − PTKP',
-        'PPh LN yang bisa dikreditkan'
+        'SPT Tahunan tahun lalu',
+        'Laporan keuangan bulanan yang disampaikan ke OJK',
+        'RKAP yang disahkan RUPS',
+        'Perkiraan penghasilan tahun berjalan'
       ],
       correct: 1,
-      explanation: 'PPh yang harus dibayar sendiri = PPh Terutang − PPh 22 − PPh 23 − PPh 24 − PPh 25 yang sudah dibayar. Inilah dasar perhitungan angsuran PPh 25.'
+      explanation: 'WP Bank menghitung PPh 25 berdasarkan laporan keuangan bulanan yang disampaikan ke OJK (laporan posisi keuangan dan laba rugi sejak awal tahun s.d. masa pajak yang dilaporkan).'
     },
     {
-      q: 'Penghasilan yang dikenai PPh Final…',
+      q: 'Penghasilan yang dikenai PPh Final dalam perhitungan PKP untuk PPh 24…',
       options: [
-        'Dimasukkan dalam PKP untuk PPh 24',
-        'Tidak dimasukkan dalam PKP untuk PPh 24',
-        'Dikreditkan sebagai PPh 24',
-        'Dikenai PPh tambahan'
+        'Dimasukkan dalam PKP',
+        'Tidak dimasukkan dalam PKP',
+        'Dikenai tarif berbeda',
+        'Ditambahkan ke penghasilan LN'
       ],
       correct: 1,
-      explanation: 'Penghasilan yang dikenai PPh Final (Pasal 4 ayat 2 UU PPh) dan penghasilan istri yang dikenai pajak tersendiri TIDAK DIMASUKKAN dalam PKP untuk menghitung PPh 24.'
+      explanation: 'PKP untuk perhitungan PPh 24 tidak termasuk penghasilan yang dikenai PPh bersifat final dan/atau penghasilan yang dikenai pajak tersendiri.'
     },
     {
-      q: 'Jika total kredit pajak melebihi PPh terutang, apa yang terjadi?',
+      q: 'Kapan WP dapat mengajukan permohonan pengurangan PPh 25 karena usaha menurun?',
       options: [
-        'Kredit pajak tetap diberikan seluruhnya',
-        'Kredit dibatasi sebesar PPh terutang dan dialokasikan proporsional',
-        'Kelebihan otomatis menjadi restitusi',
-        'Dikompensasikan ke tahun berikutnya'
+        'Kapan saja',
+        'Setelah 3 bulan atau lebih berjalannya tahun pajak, jika PPh terutang diperkirakan kurang dari 75% dari dasar penghitungan PPh 25',
+        'Hanya setelah SPT disampaikan',
+        'Setelah 6 bulan berjalan'
       ],
       correct: 1,
-      explanation: 'Kredit pajak tidak boleh melebihi PPh terutang. Jika melebihi, dibatasi sebesar PPh terutang dan dialokasikan secara proporsional berdasarkan penghasilan neto dari masing-masing negara.'
+      explanation: 'Sesuai Pasal 7 KEP-537/PJ./2000, setelah 3 bulan atau lebih berjalannya tahun pajak, WP dapat mengajukan pengurangan jika PPh terutang diperkirakan kurang dari 75% dari dasar penghitungan PPh 25.'
     }
   ]
 
